@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import { NextUIProviders } from "@/providers/NextUIProvider";
+import MainNavbar from "@/components/navbar/navbar";
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
@@ -22,9 +23,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"  className='dark'>
+    <html lang="en" className="dark">
       <body className={ubuntu.className + " min-h-screen"}>
-        <NextUIProviders>{children}</NextUIProviders>
+        <NextUIProviders>
+          <MainNavbar />
+          {children}
+        </NextUIProviders>
       </body>
     </html>
   );
