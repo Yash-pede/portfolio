@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
+import { NextUIProviders } from "@/providers/NextUIProvider";
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
 
-  display: 'swap',
-  });
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Name",
@@ -21,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+    <html lang="en"  className='dark'>
+      <body className={ubuntu.className}>
+        <NextUIProviders>{children}</NextUIProviders>
+      </body>
     </html>
   );
 }
