@@ -12,10 +12,10 @@ import {
 } from "@nextui-org/react";
 import { Braces } from "lucide-react";
 import { menuItems, NavbarItems, SiteConfig } from "@/lib/config";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll isBordered>
@@ -33,25 +33,15 @@ export default function MainNavbar() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {NavbarItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`}>
-            <Link
-              color={item.color ? (item.color as any) : "primary"}
-              href="#"
-            >
+            <Link color={item.color ? (item.color as any) : "primary"} href="#">
               {item.title}
             </Link>
           </NavbarItem>
         ))}
-      </NavbarContent>
-      {/* <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-           Resume
-          </Button>
+          <ThemeSwitcher />
         </NavbarItem>
-      </NavbarContent> */}
+      </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

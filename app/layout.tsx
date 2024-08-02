@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import { NextUIProviders } from "@/providers/NextUIProvider";
 import MainNavbar from "@/components/layout/navbar";
 import { SiteConfig } from "@/lib/config";
 import HeroTitle from "@/components/layout/HeroTitle";
+import { NextUIProviders } from "@/providers/NextUIProvider";
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
