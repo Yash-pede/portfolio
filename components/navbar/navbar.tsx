@@ -11,23 +11,11 @@ import {
   Link,
 } from "@nextui-org/react";
 import { Braces } from "lucide-react";
-import { NavbarItems, SiteConfig } from "@/lib/config";
+import { menuItems, NavbarItems, SiteConfig } from "@/lib/config";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll isBordered>
