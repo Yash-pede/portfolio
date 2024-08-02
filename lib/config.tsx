@@ -44,7 +44,7 @@ export const HeroTitleData = [
     route: "/",
     title: [
       `Hey, I'm ${SiteConfig.user.firstName}!`,
-      "I welcome to my corner of the internet!",
+      "Welcome to my corner of the internet!",
     ],
   },
   {
