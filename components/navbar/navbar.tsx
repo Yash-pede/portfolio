@@ -9,9 +9,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 import { Braces } from "lucide-react";
+import { NavbarItems, SiteConfig } from "@/lib/config";
 
 export default function MainNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -30,7 +30,7 @@ export default function MainNavbar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll  isBordered >
+    <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll isBordered>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -38,26 +38,21 @@ export default function MainNavbar() {
         />
         <NavbarBrand>
           <Braces />
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit">{SiteConfig.title}</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#" aria-current="page">
-            About
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Projects
-          </Link>
-        </NavbarItem>
+        {NavbarItems.map((item, index) => (
+          <NavbarItem key={`${item}-${index}`}>
+            <Link
+              color={item.color ? (item.color as any) : "primary"}
+              href="#"
+            >
+              {item.title}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       {/* <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
