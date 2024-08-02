@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import { NextUIProviders } from "@/providers/NextUIProvider";
-import MainNavbar from "@/components/navbar/navbar";
+import MainNavbar from "@/components/layout/navbar";
 import { SiteConfig } from "@/lib/config";
+import HeroTitle from "@/components/layout/HeroTitle";
+import { NextUIProviders } from "@/providers/NextUIProvider";
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
@@ -28,7 +29,10 @@ export default function RootLayout({
       <body className={ubuntu.className + " min-h-screen"}>
         <NextUIProviders>
           <MainNavbar />
+          <div className="px-4 sm:px-5 md:px7 lg:px-10 pt-5">
+          <HeroTitle />
           {children}
+          </div>
         </NextUIProviders>
       </body>
     </html>
