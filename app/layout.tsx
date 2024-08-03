@@ -5,9 +5,10 @@ import MainNavbar from "@/components/layout/navbar";
 import { SiteConfig } from "@/lib/config";
 import HeroTitle from "@/components/layout/HeroTitle";
 import { NextUIProviders } from "@/providers/NextUIProvider";
+import Footer from "@/components/layout/Footer";
 
 const ubuntu = Ubuntu({
-  weight: ["400", "700"],
+  weight: ["300", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           <HeroTitle />
           <div className="px-7 md:max-w-5xl lg:max-w-6xl mx-auto">
             {children}
+            {/* <Footer /> */}
           </div>
         </NextUIProviders>
       </body>
