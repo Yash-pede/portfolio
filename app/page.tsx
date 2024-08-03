@@ -1,7 +1,9 @@
-import {Button} from '@nextui-org/button'; 
+import GithubContributions from "@/components/GithubContributions";
 
-export default function Page() {
+export default function Home() {
   return (
-  <p>Home</p>
-  )
-} 
+    <div className="">
+      <GithubContributions />
+    </div>
+  );
+}
