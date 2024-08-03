@@ -8,6 +8,7 @@ export const SiteConfig = {
     lastName: "lastName",
     email: "name@name.com",
     username: "username",
+    githubUserId: "Yash-pede",
   },
   title: "ACME",
 };
@@ -55,3 +56,5 @@ export const HeroTitleData = [
     ],
   },
 ];
+
+export const GithubYears = [2024, 2023, 2022];
