@@ -1,2 +1,4 @@
 import FullBody from "./full-body.jpg";
-export { FullBody };
+import Dp from "./dp.jpg";
+import GoogleCalander from "./calendar.png";
+export { FullBody, Dp, GoogleCalander };

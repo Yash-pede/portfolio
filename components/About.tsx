@@ -1,6 +1,9 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import AboutCardFullPicture from "./micro/AboutCardFullPicture";
+import AboutCardDp from "./micro/AboutCardDp";
+import Link from "next/link";
+import MeetingScheduling from "./micro/MeetingScheduling";
 
 const About = () => {
   return (
@@ -36,9 +39,11 @@ const items: {
   },
   {
     className: "md:col-span-3",
+    content: <MeetingScheduling/>
   },
   {
     className: "md:col-span-1",
+    content: <AboutCardDp/>
   },
   {
     className: "col-span-3 md:col-span-2 row-span-2",

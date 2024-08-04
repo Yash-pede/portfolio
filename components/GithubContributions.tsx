@@ -3,7 +3,7 @@ import { GithubYears, SiteConfig } from "@/lib/config";
 import { Tooltip } from "@nextui-org/react";
 import React, { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { ButtonC } from "./layout/MyButton";
+import { ButtonC } from "./layout/ButtonC";
 
 const GithubContributions = () => {
   const [year, setYear] = useState(GithubYears[0]);
