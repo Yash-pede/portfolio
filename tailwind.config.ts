@@ -20,7 +20,45 @@ const config: Config = {
   },
   darkMode: "class",
   plugins: [
-    nextui(),
+    nextui({
+      layout: {
+        // radius: {
+        //   small: "4px", // rounded-small
+        //   medium: "6px", // rounded-medium
+        //   large: "8px", // rounded-large
+        // },
+      },
+      themes: {
+        light: {
+          colors: {
+            background: "hsl(0 0% 100%)",
+            foreground: "hsl(222.2 84% 4.9%)",
+            primary: {
+              DEFAULT: "hsl(221.2 83.2% 53.3%)",
+              foreground: "hsl(210 40% 98%)",
+            },
+            secondary: {
+              DEFAULT: "hsl(210 40% 96.1%)",
+              foreground: "hsl(222.2 47.4% 11.2%)",
+            },
+          },
+        },
+        dark: {
+          colors: {
+            background: "#030617",
+            foreground: "hsl(210 40% 98%)",
+            primary: {
+              DEFAULT: "hsl(217.2 91.2% 59.8%)",
+              foreground: "hsl(222.2 47.4% 11.2%)",
+            },
+            secondary: {
+              DEFAULT: "hsl(217.2 32.6% 17.5%)",
+              foreground: "hsl(210 40% 98%)",
+            },
+          },
+        },
+      },
+    }),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
