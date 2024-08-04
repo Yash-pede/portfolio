@@ -31,7 +31,7 @@ export default function RootLayout({
         <NextUIProviders>
           <MainNavbar />
           <HeroTitle />
-          <div className="px-7 md:max-w-5xl lg:max-w-6xl mx-auto">
+          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto">
             {children}
             {/* <Footer /> */}
           </div>
