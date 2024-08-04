@@ -7,10 +7,10 @@ import GitHubCalendar from "react-github-calendar";
 const GithubContributions = () => {
   const [year, setYear] = useState(GithubYears[0]);
   return (
-    <div className="mt-10">
+    <div className="mt-10 space-y-7">
       <p className="text-3xl font-bold ">Contrbution Graph</p>
-      <div className="w-full flex gap-7 items-center mt-5 shadow">
-        <div className="light:bg-dot-foreground-800 dark:bg-foreground-100/40 rounded-xl p-5">
+      <div className="flex xl:flex-row flex-col gap-4">
+        <div className="dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 p-8 rounded-lg max-w-fit max-h-fit">
           <GitHubCalendar
             username={SiteConfig.user.githubUserId}
             year={year}
@@ -23,7 +23,7 @@ const GithubContributions = () => {
             )}
           />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex justify-start xl:flex-col flex-row flex-wrap gap-2">
           {GithubYears.map((y) => (
             <Button
               key={y}
