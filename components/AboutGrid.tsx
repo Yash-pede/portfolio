@@ -15,7 +15,7 @@ const AboutGrid = () => {
           key={item.id}
           title={item.title}
           description={item.description}
-          className={item.className}
+          className={item.cname}  
           />
         ))}
       </BentoGrid>

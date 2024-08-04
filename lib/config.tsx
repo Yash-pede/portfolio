@@ -59,11 +59,15 @@ export const HeroTitleData = [
 
 export const GithubYears = [2024, 2023, 2022];
 
-export const GridItems=[
-  {title: 'Title1', description:'Desc1', id:1, className:" w-max"},
-  {title: 'Title2', description:'Desc2', id:2, className:"lg:col-span-2 md:col-span-3 md:row-span-2"},
-  {title: 'Title3', description:'Desc3', id:3, className:"lg:col-span-2 md:col-span-3 md:row-span-2"},
-  {title: 'Title4', description:'Desc4', id:4, className:"lg:col-span-2 md:col-span-3 md:row-span-1"},
-  {title: 'Title5', description:'Desc5', id:5, className:"lg:col-span-2 md:col-span-3 md:row-span-1"},
-
+export const GridItems = [
+  { title: "Title1", description: "Desc1", id: 1, cname: "row-span-2" },
+  { title: "Title2", description: "Desc1", id: 2, cname: "col-span-2     row-span-1" },
+  { title: "Title3", description: "Desc1", id: 3, cname: "" },
+  {
+    title: "Title4",
+    description: "Desc1",
+    id: 4,
+    cname: "col-span-2 row-span-2",
+  },
+  { title: "Title5 ", description: "Desc1", id: 5, cname: "col-span-2" },
 ];
