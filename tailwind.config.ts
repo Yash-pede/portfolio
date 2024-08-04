@@ -16,7 +16,8 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   darkMode: "class",
   plugins: [
@@ -32,28 +33,28 @@ const config: Config = {
         light: {
           colors: {
             background: "hsl(0 0% 100%)",
-            foreground: "hsl(222.2 84% 4.9%)",
+            // foreground: "hsl(222.2 84% 4.9%)",
             primary: {
               DEFAULT: "hsl(221.2 83.2% 53.3%)",
-              foreground: "hsl(210 40% 98%)",
+              // foreground: "hsl(210 40% 98%)",
             },
             secondary: {
               DEFAULT: "hsl(210 40% 96.1%)",
-              foreground: "hsl(222.2 47.4% 11.2%)",
+              // foreground: "hsl(222.2 47.4% 11.2%)",
             },
           },
         },
         dark: {
           colors: {
             background: "#030617",
-            foreground: "hsl(210 40% 98%)",
+            // foreground: "hsl(210 40% 98%)",
             primary: {
               DEFAULT: "hsl(217.2 91.2% 59.8%)",
-              foreground: "hsl(222.2 47.4% 11.2%)",
+              // foreground: "hsl(222.2 47.4% 11.2%)",
             },
             secondary: {
               DEFAULT: "hsl(217.2 32.6% 17.5%)",
-              foreground: "hsl(210 40% 98%)",
+              // foreground: "hsl(210 40% 98%)",
             },
           },
         },
