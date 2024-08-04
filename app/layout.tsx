@@ -33,9 +33,8 @@ export default function RootLayout({
           <HeroTitle />
           <div className="px-7 md:max-w-5xl lg:max-w-6xl mx-auto">
             {children}
-            {/* <Footer /> */}
-          </div>
           <Footer/>
+          </div>
         </NextUIProviders>
       </body>
     </html>

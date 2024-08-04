@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 export const SiteConfig = {
   site: {
     name: "Name",
@@ -58,3 +60,26 @@ export const HeroTitleData = [
 ];
 
 export const GithubYears = [2024, 2023, 2022];
+
+export const footerOptions = [
+  {
+    title: "General",
+    links: ["Home", "About", "Projects"],
+  },
+  {
+    title: "Specifics",
+    links: ["Toolbox", "Products"],
+  },
+  {
+    title: "Extra",
+    links: ["Chanelog", "Connections", "Resume", "Snippets"],
+  },
+];
+
+export const socialLinks = [
+  {
+    title:"Github",
+    icon:<Github/>,
+    url:"https://github.com/Yash-pede"
+  }
+]

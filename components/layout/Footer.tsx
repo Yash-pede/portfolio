@@ -1,53 +1,68 @@
-import { SiteConfig } from '@/lib/config'
-import { GithubIcon, LinkedinIcon, Twitter } from 'lucide-react'
-import React from 'react'
+"use client";
+import { footerOptions, SiteConfig, socialLinks } from "@/lib/config";
+import { Link } from "@nextui-org/react";
+import { motion } from "framer-motion";
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className='w-full h-96 pt-28 pb-14 gap-3'>
-    <div>
-      <div className='flex gap-x-14 justify-center pt-5'>
-        <div className='space-y-5 max-w-80 '><a href="/" className='font-semibold'>Click</a>
-          <br />
-          <div>I'm {SiteConfig.user.firstName} - a senior front-end developer, thanks for checking out my site!</div>
+    <motion.div
+      className="w-full mt-24 pb-10 gap-3 dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative"
+      initial={{
+        backgroundImage:
+          "radial-gradient(75% 63.6% at 50% 2.5%, rgba(36, 115, 236, 0.4) 0%, rgba(99, 102, 241, 0) 100%)",
+      }}
+      whileHover={{
+        backgroundImage:
+          "radial-gradient(75% 63.6% at 50% 2.5%, rgba(36, 115, 236, 0.7) 0%, rgba(99, 102, 241, 0) 100%)",
+      }}
+      transition={{
+        duration: 0.6,
+        delay: 0.2,
+      }}
+    >
+      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-background bg-secondary-foreground/5 [mask-image:linear-gradient(90deg,transparent_20%,black)]"></div> */}
+      <div>
+        <div className="flex gap-x-14 justify-center pt-5">
+          <div className="space-y-5 max-w-80 ">
+            <a href="/" className="font-semibold">
+              Click
+            </a>
+            <br />
+            <div>
+              I'm {SiteConfig.user.firstName} - a senior front-end developer,
+              thanks for checking out my site!
+            </div>
 
-          <div className='flex flex-row space-x-3'>
-            <GithubIcon/>
-            <LinkedinIcon/>
-            <Twitter/>
+            <div className="flex flex-row space-x-3 text-neutral-700">
+              {socialLinks.map((link, index) => (
+                <Link href={link.url} key={index}>
+                  {link.icon}
+                </Link>
+              ))}
+            </div>
+
+            <div>© 2024 {SiteConfig.site.name}</div>
           </div>
 
-          <div>© 2024 {SiteConfig.site.name}</div>
-        </div>
-
-
-        <div className='flex flex-row space-x-24 font-semibold'>
-          <div className='flex flex-col gap-4'>GENERAL
-            <div className='flex flex-col font-medium gap-2'>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            </div>
-          </div>
-          <div className='flex flex-col gap-4'>SPECIFICS
-          <div className='flex flex-col font-medium gap-2'>
-            <a href="#">Toolbox</a>
-            <a href="#">Products</a>
-            </div>
-          </div>
-          <div className='flex flex-col gap-4'>EXTRA
-          <div className='flex flex-col font-medium gap-2'>
-            <a href="#">Chanelog</a>
-            <a href="#">Connections</a>
-            <a href="#">Résumé</a>
-            <a href="#">Snippets</a>
-            </div>
+          <div className="flex flex-row space-x-24 font-semibold">
+            {footerOptions.map((items, index) => (
+              <div className="flex flex-col gap-4" key={index}>
+                {items.title}
+                <div className="flex flex-col font-medium gap-2">
+                  {items.links.map((link, index) => (
+                    <Link href={link} key={index}>
+                      {link}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      </div>
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Footer
+export default Footer;
