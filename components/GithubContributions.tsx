@@ -13,7 +13,7 @@ const GithubContributions = () => {
       <div className="flex xl:flex-row xl:items-center flex-col gap-4">
         <div className="dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 p-8 rounded-lg max-w-fit max-h-fit">
           <GitHubCalendar
-            username={SiteConfig.user.githubUserId}
+            username={SiteConfig.user.socials.githubUserId}
             year={year}
             renderBlock={(block, activity) => (
               <Tooltip showArrow
