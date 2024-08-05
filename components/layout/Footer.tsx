@@ -25,18 +25,18 @@ const Footer = () => {
       <div>
         <div className="flex gap-x-14 justify-center pt-5">
           <div className="space-y-5 max-w-80 ">
-            <Link href="/" className="font-semibold">
+            <Link color="foreground" href="/" className="font-semibold">
               Logo
             </Link>
             <br />
-            <div>
+            <p className="font-medium">
               I&apos;m {SiteConfig.user.firstName} - a senior front-end developer,
               thanks for checking out my site!
-            </div>
+            </p>
 
             <div className="flex flex-row space-x-3 text-neutral-700">
               {socialLinks.map((link, index) => (
-                <Link href={link.url} key={index}>
+                <Link color="foreground" href={link.url} key={index}>
                   {link.icon}
                 </Link>
               ))}
@@ -51,7 +51,7 @@ const Footer = () => {
                 {items.title}
                 <div className="flex flex-col font-medium gap-2">
                   {items.routes.map((link, index) => (
-                    <Link href={link.route} key={index}>
+                    <Link color="foreground" href={link.route} key={index}>
                       {link.name}
                     </Link>
                   ))}
