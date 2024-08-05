@@ -15,13 +15,13 @@ const SkillsStagger = () => {
         <p className="text-primary font-medium text-lg">SKILLS</p>
         <p className="text-4xl">Here’s what I can do</p>
       </div>
-      <div className="flex justify-center items-center flex-wrap max-w-4xl gap-3">
+      <div className="flex justify-center items-center flex-wrap max-w-4xl md:gap-3 gap-1">
         {skills.map((skill, i) => (
           <MotionChip
             key={i}
             variant="flat"
             color="primary"
-            className="text-lg px-7 py-5 rounded-lg"
+            className="md:text-lg md:px-7 md:py-5 rounded-lg"
             variants={fadeInAnimation}
             initial="initial"
             animate="animate"
