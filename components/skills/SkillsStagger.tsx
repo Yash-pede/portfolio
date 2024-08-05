@@ -5,23 +5,21 @@ import { Chip } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { skills } from "@/lib/config";
 import { fadeInAnimation } from "@/lib/animations";
+import SectionHeading from "../layout/SectionHeading";
 
 const MotionChip = motion(Chip);
 
 const SkillsStagger = () => {
   return (
     <section className="w-full h-full flex flex-col gap-5 md:gap-7 items-center justify-center ">
-      <div className="max-w-md flex justify-center items-center flex-col gap-5">
-        <p className="text-primary font-medium text-lg">SKILLS</p>
-        <p className="text-4xl">Here’s what I can do</p>
-      </div>
+      <SectionHeading title="SKILLS" subtitle="Here’s what I can do" />
       <div className="flex justify-center items-center flex-wrap max-w-4xl md:gap-3 gap-1">
         {skills.map((skill, i) => (
           <MotionChip
             key={i}
             variant="flat"
             color="primary"
-            className="md:text-lg md:px-7 md:py-5 rounded-lg"
+            className="md:text-lg md:px-6 md:py-4 rounded-lg"
             variants={fadeInAnimation}
             initial="initial"
             animate="animate"
