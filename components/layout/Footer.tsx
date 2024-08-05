@@ -30,7 +30,7 @@ const Footer = () => {
             </Link>
             <br />
             <div>
-              I'm {SiteConfig.user.firstName} - a senior front-end developer,
+              I&apos;m {SiteConfig.user.firstName} - a senior front-end developer,
               thanks for checking out my site!
             </div>
 
