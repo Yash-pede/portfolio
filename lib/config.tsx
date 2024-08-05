@@ -10,7 +10,11 @@ export const SiteConfig = {
     lastName: "lastName",
     email: "name@name.com",
     username: "username",
+    socials:{
     githubUserId: "Yash-pede",
+    linkedInUserId: "Yash-pede",
+    },
+    schedulerLink:"https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
 };
