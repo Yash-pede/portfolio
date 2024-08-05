@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const AboutCardFullPicture = () => {
   return (
-    <div className="relative w-full h-full flex justify-center items-center">
+    <div className="relative w-full flex justify-center items-center md:h-[400px]">
       <motion.div
         className="absolute z-10 w-full h-full"
         initial={{
