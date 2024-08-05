@@ -7,7 +7,7 @@ import React from "react";
 const Footer = () => {
   return (
     <motion.div
-      className="w-full mt-24 pb-10 gap-3 dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative"
+      className="w-full mt-24 pb-14 pt-6 gap-3 dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative rounded-t-[7rem] "
       initial={{
         backgroundImage:
           "radial-gradient(75% 63.6% at 50% 2.5%, rgba(36, 115, 236, 0.4) 0%, rgba(99, 102, 241, 0) 100%)",
@@ -25,9 +25,9 @@ const Footer = () => {
       <div>
         <div className="flex gap-x-14 justify-center pt-5">
           <div className="space-y-5 max-w-80 ">
-            <a href="/" className="font-semibold">
-              Click
-            </a>
+            <Link href="/" className="font-semibold">
+              Logo
+            </Link>
             <br />
             <div>
               I'm {SiteConfig.user.firstName} - a senior front-end developer,
@@ -50,9 +50,9 @@ const Footer = () => {
               <div className="flex flex-col gap-4" key={index}>
                 {items.title}
                 <div className="flex flex-col font-medium gap-2">
-                  {items.links.map((link, index) => (
-                    <Link href={link} key={index}>
-                      {link}
+                  {items.routes.map((link, index) => (
+                    <Link href={link.route} key={index}>
+                      {link.name}
                     </Link>
                   ))}
                 </div>

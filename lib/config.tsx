@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const SiteConfig = {
   site: {
@@ -64,22 +64,71 @@ export const GithubYears = [2024, 2023, 2022];
 export const footerOptions = [
   {
     title: "General",
-    links: ["Home", "About", "Projects"],
+    routes: [
+      {
+        name: "Home",
+        route: "/",
+      },
+      {
+        name: "About",
+        route: "/about",
+      },
+      {
+        name: "Projects",
+        route: "/projects",
+      },
+    ],
   },
   {
     title: "Specifics",
-    links: ["Toolbox", "Products"],
+    routes: [
+      {
+        name: "Toolbox",
+        route: "/toolbox",
+      },
+      {
+        name: "Products",
+        route: "/products",
+      },
+    ],
   },
   {
     title: "Extra",
-    links: ["Chanelog", "Connections", "Resume", "Snippets"],
+    routes: [
+     {
+        name: "Chanelog",
+        route: "/chanelog",
+      },
+      {
+        name: "Connections",
+        route: "/connections",
+      },
+      {
+        name: "Resume",
+        route: "/resume",
+      },
+      {
+        name: "Snippets",
+        route: "/snippets",
+      },
+    ],
   },
 ];
 
 export const socialLinks = [
   {
-    title:"Github",
-    icon:<Github/>,
-    url:"https://github.com/Yash-pede"
-  }
-]
+    title: "Github",
+    icon: <Github />,
+    url: "https://github.com/Yash-pede",
+  },
+  {
+    title: "LinkedIn",
+    icon: <Linkedin />,
+    url: "https://www.linkedin.com/in/yash-pede/",
+  },
+  {
+    title: "Twitter",
+    icon: <Twitter />,
+    url: "https://x.com/vo_id8",
+  },
+];
