@@ -14,7 +14,7 @@ export const AboutCardDp = () => {
       target="_blank"
     >
       <Avatar src={"/images/dp.jpg"} className="w-16 h-16 text-large" />
-      {SiteConfig.user.username}
+      @{SiteConfig.user.username}
       <ButtonC
         color="bright"
         variant="flat"
