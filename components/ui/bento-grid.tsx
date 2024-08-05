@@ -32,7 +32,7 @@ export const BentoGridItem = ({
   return (
     <WobbleCard
       containerClassName={cn(
-        "row-span-1 rounded-3xl hover:shadow-xl transition-all duration-1000 dark:border-white/[0.2] bg-secondary border border-transparent",
+        "row-span-1 rounded-3xl hover:shadow-xl transition-all duration-1000 dark:border-white/[0.2] bg-foreground/[0.05] dark:bg-secondary  border border-transparent",
         className
       )}
     >

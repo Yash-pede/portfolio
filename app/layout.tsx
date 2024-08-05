@@ -8,7 +8,7 @@ import { NextUIProviders } from "@/providers/NextUIProvider";
 import Footer from "@/components/layout/Footer";
 
 const ubuntu = Ubuntu({
-  weight: ["300", "700"],
+  weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
 

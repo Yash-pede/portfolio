@@ -1,6 +1,13 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import AboutCardFullPicture from "./micro/AboutCardFullPicture";
+import {
+  AboutCardFullPicture,
+  AboutCardDp,
+  AboutCardProjects,
+  AboutCardToolbox,
+  MeetingScheduling,
+} from "./aboutSection";
+import { LucideScrollText } from "lucide-react";
 
 const About = () => {
   return (
@@ -11,7 +18,7 @@ const About = () => {
           Here’s what sets me apart and makes me unique
         </p>
       </div>
-      <BentoGrid className="max-w-4xl mx-auto grid-rows-3 grid-cols-3 md:grid-cols-4 gap-7">
+      <BentoGrid className="md:max-w-4xl w-full mx-auto grid-rows-4 md:grid-rows-3 grid-cols-2 md:grid-cols-4 md:gap-7">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
@@ -31,19 +38,30 @@ const items: {
   content?: React.ReactNode;
 }[] = [
   {
-    className: "col-span-2 md:col-span-1 row-span-2",
+    className: "col-span-1 md:col-span-1 row-span-2",
     content: <AboutCardFullPicture />,
   },
   {
-    className: "md:col-span-3",
+    className: "hidden md:block md:col-span-3",
+    content: <MeetingScheduling />,
   },
   {
-    className: "md:col-span-1",
+    className: "md:hidden col-span-2",
+    content: <div className="w-full h-full grid place-items-center">
+      <LucideScrollText className="w-16 h-16" strokeWidth="1.5"/>
+      <p className="text-2xl ">RESUME</p>
+    </div>,
   },
   {
-    className: "col-span-3 md:col-span-2 row-span-2",
+    className: "col-span-2 md:col-span-1",
+    content: <AboutCardDp />,
   },
   {
-    className: "col-span-3 md:col-span-2",
+    className: "col-span-3 md:col-span-2 row-span-1 md:row-span-2",
+    content: <AboutCardToolbox />,
+  },
+  {
+    className: "col-span-3 md:col-span-2 row-span-1",
+    content: <AboutCardProjects />,
   },
 ];

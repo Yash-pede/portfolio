@@ -3,7 +3,7 @@ import { GithubYears, SiteConfig } from "@/lib/config";
 import { Tooltip } from "@nextui-org/react";
 import React, { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { ButtonC } from "./layout/MyButton";
+import { ButtonC } from "./layout/ButtonC";
 
 const GithubContributions = () => {
   const [year, setYear] = useState(GithubYears[0]);
@@ -11,9 +11,9 @@ const GithubContributions = () => {
     <div className="mt-10 space-y-7">
       <p className="text-3xl font-bold ">Contrbution Graph</p>
       <div className="flex xl:flex-row xl:items-center flex-col gap-4">
-        <div className="dark:bg-primary-bg bg-secondary-bg border dark:border-zinc-800 border-zinc-200 p-8 rounded-lg max-w-fit max-h-fit">
+        <div className="bg-secondary/30 border border-divider p-8 rounded-lg max-w-fit max-h-fit z-20">
           <GitHubCalendar
-            username={SiteConfig.user.githubUserId}
+            username={SiteConfig.user.socials.githubUserId}
             year={year}
             renderBlock={(block, activity) => (
               <Tooltip showArrow

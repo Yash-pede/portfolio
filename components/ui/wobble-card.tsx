@@ -46,7 +46,7 @@ export const WobbleCard = ({
       }}
       whileHover={{
         backgroundImage:
-          "radial-gradient(75% 63.6% at 50% 2.5%, rgba(36, 115, 236, 0.7) 0%, rgba(99, 102, 241, 0) 100%)",
+          "radial-gradient(75% 63.6% at 50% 2.5%, rgba(36, 115, 236, 0.6) 0%, rgba(99, 102, 241, 0) 100%)",
       }}
       transition={{
         duration: 0.6,
