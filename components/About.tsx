@@ -7,6 +7,7 @@ import {
   AboutCardToolbox,
   MeetingScheduling,
 } from "./aboutSection";
+import { LucideScrollText } from "lucide-react";
 
 const About = () => {
   return (
@@ -46,7 +47,10 @@ const items: {
   },
   {
     className: "md:hidden col-span-2",
-    content: <>RESUME</>,
+    content: <div className="w-full h-full grid place-items-center">
+      <LucideScrollText className="w-16 h-16" strokeWidth="1.5"/>
+      <p className="text-2xl ">RESUME</p>
+    </div>,
   },
   {
     className: "col-span-2 md:col-span-1",
