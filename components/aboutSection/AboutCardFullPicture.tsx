@@ -4,9 +4,9 @@ import { FullBody } from "@/public/images";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const AboutCardFullPicture = () => {
+export const AboutCardFullPicture = () => {
   return (
-    <div className="relative w-full flex justify-center items-center md:h-[400px]">
+    <div className="relative w-full h-full flex justify-center items-center max-h-[400px]">
       <motion.div
         className="absolute z-10 w-full h-full"
         initial={{
@@ -33,5 +33,3 @@ const AboutCardFullPicture = () => {
     </div>
   );
 };
-
-export default AboutCardFullPicture;

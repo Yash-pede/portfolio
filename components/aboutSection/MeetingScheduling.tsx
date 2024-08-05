@@ -1,15 +1,16 @@
 import { SiteConfig } from "@/lib/config";
 import { GoogleCalander } from "@/public/images";
-import { Link } from "@nextui-org/react";
+import { ArrowUpRightFromCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const MeetingScheduling = () => {
+export const MeetingScheduling = () => {
   return (
     <Link
-      isExternal
       href={SiteConfig.user.schedulerLink}
-      className="relative w-full h-full flex justify-between items-start p-4 md:p-6 group gap-28"
+      target="_blank"
+      className="relative w-full h-full flex justify-between items-start p-4 md:p-6 group gap-28 "
     >
       <div className="w-full h-full flex flex-col gap-3 text-foreground text-start">
         <h3 className="text-xl">Book a call with me</h3>
@@ -20,6 +21,7 @@ const MeetingScheduling = () => {
           Powerd by google calendar
         </p>
       </div>
+      <ArrowUpRightFromCircle className="absolute right-5 top-5 z-10 w-3 h-3 text-transparent transition-all duration-500 group-hover:text-divider/60 group-hover:top-2 opacity-0 group-hover:opacity-100" />
       <div className="overflow-hidden w-full h-full inset-0 transition-all duration-400 relative left-[0%] top-[20%] group-hover:top-[15%] scale-125 rounded-lg border-[0.5px] border-divider">
         <Image
           src={GoogleCalander}
@@ -30,5 +32,3 @@ const MeetingScheduling = () => {
     </Link>
   );
 };
-
-export default MeetingScheduling;
