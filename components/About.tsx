@@ -8,16 +8,12 @@ import {
   MeetingScheduling,
 } from "./aboutSection";
 import { LucideScrollText } from "lucide-react";
+import SectionHeading from "./layout/SectionHeading";
 
 const About = () => {
   return (
     <section className="flex flex-col text-center w-full justify-center items-center gap-10">
-      <div className="max-w-md flex justify-center items-center flex-col gap-5">
-        <p className="text-primary font-medium text-lg">ABOUT</p>
-        <p className="text-4xl">
-          Here’s what sets me apart and makes me unique
-        </p>
-      </div>
+      <SectionHeading title="ABOUT" subtitle="Here’s what sets me apart and makes me unique" />
       <BentoGrid className="md:max-w-4xl w-full mx-auto grid-rows-4 md:grid-rows-3 grid-cols-2 md:grid-cols-4 md:gap-7">
         {items.map((item, i) => (
           <BentoGridItem
