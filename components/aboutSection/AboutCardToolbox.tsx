@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Globe } from "../ui/CobeGlobe";
 import { notion, obsidian, vscode, warp } from "@/public/images";
+import { ArrowUpRightFromCircle } from "lucide-react";
 
 export const AboutCardToolbox = () => {
   return (
@@ -16,9 +17,9 @@ export const AboutCardToolbox = () => {
           const startAngle = 170;
           const endAngle = 280;
           const angleRange = endAngle - startAngle;
-          const angleStep = angleRange / (4 - 1) ; // 4 dots, hence 3 gaps
-          const angle = startAngle + (index * angleStep); // Calculate angle for each dot
-          
+          const angleStep = angleRange / (4 - 1); // 4 dots, hence 3 gaps
+          const angle = startAngle + index * angleStep; // Calculate angle for each dot
+
           const rad = (angle * Math.PI) / 180;
           const radius = 220; // Adjust radius to increase the circle size
           const x = radius * Math.cos(rad);
@@ -40,7 +41,7 @@ export const AboutCardToolbox = () => {
         })}
       </div>
       <div className="md:hidden flex justify-self-end mr-auto gap-2">
-      {tools.map((tool, index) => {
+        {tools.map((tool, index) => {
           return (
             <Image
               key={index}
@@ -50,6 +51,10 @@ export const AboutCardToolbox = () => {
             />
           );
         })}
+        <div className="flex gap-3 items-center justify-center">
+          <span>+</span>
+          <ArrowUpRightFromCircle className="w-8 h-8 text-divider/85 group-hover:w-9 group-hover:h-9 transition-all duration-300 p-2 bg-secondary/30 rounded-medium" />
+        </div>
       </div>
       <Globe className="hidden md:block md:absolute md:-right-24 md:-bottom-72" />
     </div>
