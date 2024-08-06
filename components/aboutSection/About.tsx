@@ -22,7 +22,7 @@ const About = ({
       />
       <BentoGrid
         className={cn(
-          "md:max-w-4xl w-full mx-auto md:grid-rows-3 grid-cols-2 md:grid-cols-4 md:gap-7 gap-6",
+          "md:max-w-4xl w-full mx-auto grid-cols-2 md:grid-cols-4 md:gap-7 gap-6",
           className
         )}
       >

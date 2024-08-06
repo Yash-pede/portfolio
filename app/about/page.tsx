@@ -12,7 +12,7 @@ import {
 const AboutPage = () => {
   return (
     <section>
-      <About items={items} />
+      <About items={items} className="md:grid-rows-3"/>
     </section>
   );
 };

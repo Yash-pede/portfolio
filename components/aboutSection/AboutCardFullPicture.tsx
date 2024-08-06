@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const AboutCardFullPicture = () => {
   return (
-    <Link href="/about" className="relative w-full h-full flex justify-center items-center md:max-h-[400px]">
+    <Link href="/about" className="relative w-full h-full flex justify-center items-center inset-0">
       <motion.div
         className="absolute z-10 w-full h-full"
         initial={{
@@ -28,7 +28,7 @@ export const AboutCardFullPicture = () => {
       <Image
         src={FullBody}
         alt="Full Body"
-        className="w-full h-full object-cover z-1"
+        className="w-full h-full object-cover bottom-0"
       />
       <p className="absolute z-10 text-white text-xl bottom-0 mb-7">Learn more <br /> about me</p>
     </Link>
