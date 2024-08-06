@@ -22,10 +22,9 @@ const SkillsStagger = () => {
             className="md:text-lg md:px-6 md:py-4 rounded-lg"
             variants={fadeInAnimation}
             initial="initial"
-            animate="animate"
+            animate="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            custom={i}
           >
             {skill}
           </MotionChip>
