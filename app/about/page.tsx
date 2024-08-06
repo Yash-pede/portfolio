@@ -6,10 +6,8 @@ import {
   AboutCardProjects,
   AboutCardToolbox,
   MeetingScheduling,
+  Resume,
 } from "@/components/aboutSection";
-
-import { LucideScrollText } from "lucide-react";
-import Link from "next/link";
 
 const AboutPage = () => {
   return (
@@ -31,12 +29,7 @@ const items: {
   },
   {
     className: "md:col-span-1 col-span-1 row-span-1",
-    content: (
-      <div className="w-full h-full grid place-items-center">
-        <LucideScrollText className="w-10 h-10" strokeWidth="1.5" />
-        <p className="text-2xl ">RESUME</p>
-      </div>
-    ),
+    content: <Resume />,
   },
   {
     className: "hidden md:block col-span-2 row-span-1",
