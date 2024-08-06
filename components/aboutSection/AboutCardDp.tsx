@@ -13,7 +13,7 @@ export const AboutCardDp = () => {
       className="relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
       target="_blank"
     >
-      <Avatar src={"/images/dp.jpg"} className="w-16 h-16 text-large" />
+      <Avatar src={"/images/dp.jpg"} className="md:w-16 md:h-16 text-large" />
       @{SiteConfig.user.username}
       <ButtonC
         color="bright"

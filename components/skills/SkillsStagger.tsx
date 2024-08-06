@@ -25,6 +25,7 @@ const SkillsStagger = () => {
             animate="initial"
             whileInView="animate"
             viewport={{ once: true }}
+            custom={i + 1}
           >
             {skill}
           </MotionChip>
