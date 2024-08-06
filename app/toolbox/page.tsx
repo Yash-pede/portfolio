@@ -1,3 +1,4 @@
+"use client";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   chatGPT,
@@ -8,6 +9,9 @@ import {
   drive,
 } from "@/public/images";
 import Image from "next/image";
+import { Link } from "@nextui-org/react";
+import { HoverEffect } from "@/components/ui/cardHoverEffect";
+import { projects } from "@/lib/config";
 
 const ToolboxPage = () => {
   return (
@@ -23,66 +27,107 @@ const ToolboxPage = () => {
             }
             noNoise
           >
-            <Image src={obsidian} alt="Obsidian Logo" className="size-28" />
-            <p className="text-xl z-10">Obsidian</p>
+            <Link
+              isExternal
+              href={`https://obsidian.md/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={obsidian} alt="Obsidian Logo" className="size-28" />
+              <p className="text-xl z-10 ">Obsidian</p>
+            </Link>
+          </BentoGridItem>
+          <BentoGridItem
+            className={
+              "relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
+            }
+            noNoise
+          >
+            <Link
+              isExternal
+              href={`https://code.visualstudio.com/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={vscode} alt="VSCode Logo" className="size-28" />
+              <p className="text-xl z-10 flex justify-center">VSCode</p>
+            </Link>
+          </BentoGridItem>
+          <BentoGridItem
+            className={
+              "relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
+            }
+            noNoise
+          >
+            <Link
+              isExternal
+              href={`https://www.framer.com/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={framer} alt="Framer Logo" className="size-28" />
+              <p className="text-xl z-10 flex justify-center">Framer</p>
+            </Link>
+          </BentoGridItem>
+          <BentoGridItem
+            className={
+              "relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
+            }
+            noNoise
+          >
+            <Link
+              isExternal
+              href={`https://open.spotify.com/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={spotify} alt="Spotify Logo" className="size-28" />
+              <p className="text-xl z-10 flex justify-center">Spotify</p>
+            </Link>
+          </BentoGridItem>
+
+          <BentoGridItem
+            className={
+              "relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
+            }
+            noNoise
+          >
+            <Link
+              isExternal
+              href={`https://openai.com/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={chatGPT} alt="ChatGPT Logo" className="size-28" />
+              <p className="text-xl z-10 flex justify-center">ChatGPT</p>
+            </Link>
+          </BentoGridItem>
+          <BentoGridItem
+            className={
+              "relative w-full h-full flex gap-2 items-center justify-center flex-col p-5"
+            }
+            noNoise
+          >
+            <Link
+              isExternal
+              href={`https://drive.google.com/`}
+              className="flex justify-center flex-col"
+              color="foreground"
+            >
+              <Image src={drive} alt="Google Drive Logo" className="size-28" />
+              <p className="text-xl z-10 flex justify-center">Google Drive</p>
+            </Link>
           </BentoGridItem>
         </BentoGrid>
       </div>
+      <p className="text-4xl mt-28 font-light grid place-content-center ">
+        Hardware
+      </p>
+        <div className="max-w-5xl mx-auto px-8 mt-5">
+          <HoverEffect items={projects} />
+        </div>
     </div>
   );
 };
 
 export default ToolboxPage;
-
-const items: {
-  content?: React.ReactNode;
-}[] = [
-  {
-    content: (
-      <div className="">
-        <Image src={obsidian} alt="Obsidian Logo" className="size-28" />
-        <p className="text-xl z-10">Obsidian</p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div className="">
-        <Image src={vscode} alt="VSCode Logo" className="size-28" />
-        <p className="text-xl z-10">VSCode</p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div className="">
-        <Image src={framer} alt="Framer Logo" className="size-28" />
-        <p className="text-xl z-10">Framer</p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div className="flex flex-col items-center justify-center pt-3">
-        <Image src={spotify} alt="Spotify Logo" className="size-28" />
-        <p className="text-xl z-10">Spotify</p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div className="">
-        <Image src={chatGPT} alt="ChatGPT Logo" className="size-28" />
-        <p className="text-xl z-10">ChatGPT</p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div className="flex flex-col items-center justify-center pt-3">
-        <Image src={drive} alt="Google Drive Logo Logo" className="size-28" />
-        <p className="text-xl z-10">Google Drive</p>
-      </div>
-    ),
-  },
-];
