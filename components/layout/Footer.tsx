@@ -3,6 +3,7 @@ import { Link } from "@nextui-org/react";
 import React from "react";
 import { Noise } from "../ui/Noice";
 import { Meteors } from "../ui/meteors";
+import { isMobile } from "react-device-detect";
 
 const Footer = () => {
   return (
@@ -58,7 +59,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <Meteors number={3} />
+      <Meteors number={isMobile ? 3 : 10} />
     </div>
   );
 };
