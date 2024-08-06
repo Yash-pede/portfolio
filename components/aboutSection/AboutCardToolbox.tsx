@@ -18,11 +18,11 @@ export const AboutCardToolbox = () => {
           const startAngle = 170;
           const endAngle = 280;
           const angleRange = endAngle - startAngle;
-          const angleStep = angleRange / (4 - 1); // 4 dots, hence 3 gaps
-          const angle = startAngle + index * angleStep; // Calculate angle for each dot
+          const angleStep = angleRange / (4 - 1);
+          const angle = startAngle + index * angleStep;
 
           const rad = (angle * Math.PI) / 180;
-          const radius = 220; // Adjust radius to increase the circle size
+          const radius = 220;
           const x = radius * Math.cos(rad);
           const y = radius * Math.sin(rad);
           return (
@@ -41,7 +41,7 @@ export const AboutCardToolbox = () => {
           );
         })}
       </div>
-      <div className="md:hidden flex justify-self-end mr-auto gap-2">
+      <div className="md:hidden flex justify-self-end mr-auto gap-2 mt-4">
         {tools.map((tool, index) => {
           return (
             <Image

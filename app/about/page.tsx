@@ -33,7 +33,7 @@ const items: {
     className: "md:col-span-1 col-span-1 row-span-1",
     content: (
       <div className="w-full h-full grid place-items-center">
-        <LucideScrollText className="w-16 h-16" strokeWidth="1.5" />
+        <LucideScrollText className="w-10 h-10" strokeWidth="1.5" />
         <p className="text-2xl ">RESUME</p>
       </div>
     ),
@@ -51,7 +51,7 @@ const items: {
     content: <MeetingScheduling />,
   },
   {
-    className: "col-span-2 row-span-2",
+    className: "col-span-2 md:row-span-2 row-span-1",
     content: <AboutCardToolbox />,
   },
   {
