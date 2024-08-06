@@ -33,8 +33,8 @@ export default function RootLayout({
           <HeroTitle />
           <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto min-h-screen flex flex-col">
             <div className="flex-grow">{children}</div>
-            <Footer />
           </div>
+          <Footer />
         </NextUIProviders>
       </body>
     </html>

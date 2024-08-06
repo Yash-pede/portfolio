@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Noise } from "./Noice";
 
 export const WobbleCard = ({
   children,
@@ -69,7 +70,7 @@ export const WobbleCard = ({
           }}
           className={cn("h-full", className)}
         >
-          <Noise />
+          <Noise className="scale-[1.2]" />
           {children}
         </motion.div>
       </div>
@@ -77,14 +78,3 @@ export const WobbleCard = ({
   );
 };
 
-const Noise = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/noise.webp)",
-        backgroundSize: "30%",
-      }}
-    ></div>
-  );
-};
