@@ -3,10 +3,11 @@ import React from "react";
 import { FullBody } from "@/public/images";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const AboutCardFullPicture = () => {
   return (
-    <div className="relative w-full h-full flex justify-center items-center md:max-h-[400px]">
+    <Link href="/about" className="relative w-full h-full flex justify-center items-center md:max-h-[400px]">
       <motion.div
         className="absolute z-10 w-full h-full"
         initial={{
@@ -30,6 +31,6 @@ export const AboutCardFullPicture = () => {
         className="w-full h-full object-cover z-1"
       />
       <p className="absolute z-10 text-white text-xl bottom-0 mb-7">Learn more <br /> about me</p>
-    </div>
+    </Link>
   );
 };
