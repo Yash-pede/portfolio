@@ -25,8 +25,8 @@ export const Resume = () => {
       </Card>
       <Button
         size="md"
-        variant="flat"
-        className="absolute z-0 bottom-0 mb-3 mx-auto left-0 right-0 w-fit"
+        variant="faded"
+        className="absolute z-0 bottom-0 mb-5 mx-auto left-0 right-0 w-fit"
       >
         Resume
       </Button>
