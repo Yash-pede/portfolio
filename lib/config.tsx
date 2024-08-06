@@ -79,6 +79,34 @@ export const HeroTitleData = [
       `I'm ${SiteConfig.user.firstName}, an experienced frontend developer.`,
     ],
   },
+  {
+    route: "/projects",
+    title: [
+      `A collection of my`,
+      `favorite works`,
+    ],
+  },
+  {
+    route: "/toolbox",
+    title: [
+      `Hardware and software`,
+      `I use on a daily basis.`,
+    ],
+  },
+  {
+    route: "/chanelog",
+    title: [
+      `Changelog`,
+      `Here's whats new!`,
+    ],
+  },
+  {
+    route: "/connections",
+    title: [
+      `Connections.`,
+      `Here are some remarkable individuals I have and I would like to meet in person`,
+    ],
+  },
 ];
 
 export const GithubYears = [2024, 2023, 2022];

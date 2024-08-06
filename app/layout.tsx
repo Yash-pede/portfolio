@@ -31,10 +31,10 @@ export default function RootLayout({
         <NextUIProviders>
           <MainNavbar />
           <HeroTitle />
-          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto">
-            {children}
-          <Footer/>
+          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto min-h-screen flex flex-col">
+            <div className="flex-grow">{children}</div>
           </div>
+          <Footer />
         </NextUIProviders>
       </body>
     </html>
