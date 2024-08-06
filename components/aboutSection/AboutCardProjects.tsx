@@ -16,7 +16,7 @@ export const AboutCardProjects = () => {
           A collection of my favorite works
         </p>
       </div>
-      <Meteors number={20} />
+      <Meteors number={10} />
     </Link>
   );
 };  
