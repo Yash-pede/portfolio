@@ -8,10 +8,12 @@ export const WobbleCard = ({
   children,
   containerClassName,
   className,
+  noNoise,
 }: {
   children: React.ReactNode;
   containerClassName?: string;
   className?: string;
+  noNoise?: boolean,
 }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -70,7 +72,7 @@ export const WobbleCard = ({
           }}
           className={cn("h-full", className)}
         >
-          <Noise className="scale-[1.2]" />
+          <Noise className={`${noNoise&&"hidden"} scale-[1.2]`} />
           {children}
         </motion.div>
       </div>

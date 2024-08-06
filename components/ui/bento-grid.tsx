@@ -25,9 +25,13 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   content,
+  children,
+  noNoise,
 }: {
   className?: string;
   content?: React.ReactNode;
+  children?: React.ReactNode;
+  noNoise?: boolean;
 }) => {
   return (
     <WobbleCard
@@ -35,8 +39,9 @@ export const BentoGridItem = ({
         "row-span-1 rounded-3xl hover:shadow-xl transition-all duration-1000 dark:border-white/[0.2] bg-foreground/[0.05] dark:bg-secondary  border border-transparent",
         className
       )}
+      noNoise
     >
-      {content}
+      {children || content}
     </WobbleCard>
   );
 };
