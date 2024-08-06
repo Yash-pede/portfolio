@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,12 +16,27 @@ export const AboutCardExtra = () => {
           This a very old yt channel which I dont know who made. 😅 Dont watch
           !!!
         </p>
-        <p className="text-xs text-foreground/60 mt-auto">
-          BTW Dont forget to subscribe 😉
-        </p>
+        <div className="grid grid-cols-3 place-items-center">
+          <div className="flex items-center justify-center col-span-2">
+            <p className="text-xs text-foreground/60 text-center">
+              BTW Don&apos;t forget to subscribe 😉
+            </p>
+          </div>
+          <div className="flex items-center justify-center col-span-1">
+            <Button color="warning" variant="solid">
+              Watch
+            </Button>
+          </div>
+        </div>
       </div>
       <div className="col-span-1 row-span-1 md:order-1 hidden md:flex w-full h-full justify-center items-center rounded-2xl overflow-hidden">
-        <Image src="/gradiant.webp" alt="gradiant" width={200} height={200} className="w-full h-full"/>
+        <Image
+          src="/gradiant.webp"
+          alt="gradiant"
+          width={200}
+          height={200}
+          className="w-full h-full"
+        />
       </div>
     </Link>
   );
