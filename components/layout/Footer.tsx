@@ -58,7 +58,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <Meteors number={60} />
+      <Meteors number={3} />
     </div>
   );
 };

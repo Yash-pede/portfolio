@@ -17,13 +17,13 @@ export const AboutCardExtra = () => {
           !!!
         </p>
         <div className="grid grid-cols-3 place-items-center">
-          <div className="flex items-center justify-center col-span-2">
-            <p className="text-xs text-foreground/60 text-center">
+          <div className="flex items-start justify-start col-span-2">
+            <p className="text-xs text-foreground/60 text-start">
               BTW Don&apos;t forget to subscribe 😉
             </p>
           </div>
           <div className="flex items-center justify-center col-span-1">
-            <Button color="warning" variant="solid">
+            <Button color="warning" variant="solid" className="md:hidden">
               Watch
             </Button>
           </div>
