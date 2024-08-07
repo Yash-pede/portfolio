@@ -3,7 +3,6 @@ import {
   Blender,
   chatGPT,
   framer,
-  Insomia,
   Insomnia,
   Nextjs,
   notion,
