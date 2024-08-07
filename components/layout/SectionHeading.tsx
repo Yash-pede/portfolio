@@ -8,9 +8,9 @@ const SectionHeading = ({
   subtitle: string;
 }) => {
   return (
-    <div className="md:max-w-md text-start md:text-center w-full flex justify-center items-start md:items-center flex-col gap-5">
+    <div className="text-start  md:text-center w-full md:max-w-[60%] flex float-none flex-nowrap justify-center items-start md:items-center flex-col gap-5 mb-5 md:mb-10">
       <p className="text-primary font-medium text-lg">{title}</p>
-      <p className="text-4xl">{subtitle}</p>
+      <p className="text-2xl font-medium md:font-light md:text-4xl">{subtitle}</p>
     </div>
   );
 };

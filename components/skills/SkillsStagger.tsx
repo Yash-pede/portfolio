@@ -11,7 +11,7 @@ const MotionChip = motion(Chip);
 
 const SkillsStagger = () => {
   return (
-    <section className="w-full h-full flex flex-col gap-5 md:gap-7 items-center justify-center ">
+    <section className="w-full h-full flex flex-col items-center justify-center ">
       <SectionHeading title="SKILLS" subtitle="Here’s what I can do" />
       <div className="flex justify-center items-center flex-wrap max-w-4xl md:gap-3 gap-1">
         {skills.map((skill, i) => (
