@@ -17,7 +17,7 @@ const HeroTitle = () => {
         baseRadius={isMobile ? 0.7 : 1}
         rangeY={isMobile ? 120 : 150}
         backgroundColor="#00000000"
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+        className="flex md:items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       >
         <p className="text-2xl sm:text-3xl md:text-5xl md:text-center font-bold relative z-20 bg-clip-text pb-8 lg:max-w-4xl">
           {HeroTitleData.map(
