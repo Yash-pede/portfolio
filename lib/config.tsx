@@ -23,13 +23,12 @@ export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
-    route: "/"
+    route: "/",
   },
   {
     title: "About",
     color: "foreground",
-    route: "/about"
-
+    route: "/about",
   },
   {
     title: "Projects",
@@ -86,24 +85,15 @@ export const HeroTitleData = [
   },
   {
     route: "/projects",
-    title: [
-      `A collection of my`,
-      `favorite works`,
-    ],
+    title: [`A collection of my`, `favorite works`],
   },
   {
     route: "/toolbox",
-    title: [
-      `Hardware and software`,
-      `I use on a daily basis.`,
-    ],
+    title: [`Hardware and software`, `I use on a daily basis.`],
   },
   {
     route: "/changelog",
-    title: [
-      `Changelog`,
-      `Here's whats new!`,
-    ],
+    title: [`Changelog`, `Here's whats new!`],
   },
   {
     route: "/connections",
@@ -150,7 +140,7 @@ export const footerOptions = [
   {
     title: "Extra",
     routes: [
-     {
+      {
         name: "Changelog",
         route: "/changelog",
       },
@@ -187,3 +177,33 @@ export const socialLinks = [
     url: "https://x.com/vo_id8",
   },
 ];
+
+export const changelog = [
+  {
+    title: "YashDOn",
+    desc: "",
+    date: "",
+    img: "",
+    chips: ["Feature", "Design", "Enhancement"],
+  },
+  {
+    title: "xyz",
+    desc: "",
+    date: "",
+    img: "",
+    chips: ["Feature", "Design", "Enhancement"],
+  },
+  {
+    title: "Yas2hDOn",
+    desc: "",
+    date: "",
+    img: "",
+    chips: ["Feature", "Design", "Enhancement"],
+  },
+];
+
+export const chipsColor = {
+  Feature: "#FFFFFF",
+  Design: "#00BBFF",
+  Enhancement: "#000000",
+};
