@@ -15,7 +15,7 @@ const About = ({
   className?: string;
 }) => {
   return (
-    <section className="flex flex-col text-center w-full justify-center items-center gap-10">
+    <section className="flex flex-col text-center w-full justify-center items-center">
       <SectionHeading
         title="ABOUT"
         subtitle="Here’s what sets me apart and makes me unique"

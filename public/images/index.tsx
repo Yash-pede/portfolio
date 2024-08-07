@@ -17,6 +17,9 @@ import Insomnia from "./Insomnia.svg";
 import Tor from "./tor-browser-icon.svg";
 import PostgresSql from "./postgresql.svg";
 import valo from "./valo.svg";
+import mebro from "./me-bro.jpg";
+import mefly from "./me-fly.jpg";
+import mespeech from "./me-speech.jpg";
 export {
   FullBody,
   Dp,
@@ -37,4 +40,7 @@ export {
   Tor,
   PostgresSql,
   valo,
+  mebro,
+  mefly,
+  mespeech,
 };

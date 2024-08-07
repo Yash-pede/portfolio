@@ -7,7 +7,7 @@ import GitHubCalendar from "react-github-calendar";
 const GithubContributions = () => {
   const [year, setYear] = useState(GithubYears[0]);
   return (
-    <div className="mt-10 space-y-7 !overflow-hidden">
+    <div className="mt-10 mx-auto space-y-7 !overflow-hidden">
       <p className="text-3xl font-bold ">Contrbution Graph</p>
       <div className="flex xl:flex-row md:items-center flex-col gap-4">
         <div className="bg-secondary/30 border border-divider p-8 rounded-lg max-w-fit max-h-fit z-20">

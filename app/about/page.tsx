@@ -11,7 +11,7 @@ import {
 
 const AboutPage = () => {
   return (
-    <section>
+    <section> 
       <About items={items} />
     </section>
   );

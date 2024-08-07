@@ -4,6 +4,9 @@ import {
   chatGPT,
   framer,
   Insomnia,
+  mebro,
+  mefly,
+  mespeech,
   Nextjs,
   notion,
   obsidian,
@@ -312,3 +315,5 @@ export const toolboxData = [
     icon: chatGPT,
   },
 ];
+
+export const mySiteImages = [mebro, mefly, mespeech];
