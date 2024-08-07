@@ -17,6 +17,7 @@ import Insomnia from "./Insomnia.svg";
 import Tor from "./tor-browser-icon.svg";
 import PostgresSql from "./postgresql.svg";
 import valo from "./valo.svg";
+import ftimg from "./footerImage.png";
 export {
   FullBody,
   Dp,
@@ -37,4 +38,5 @@ export {
   Tor,
   PostgresSql,
   valo,
+  ftimg,
 };
