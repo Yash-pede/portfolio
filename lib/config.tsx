@@ -318,18 +318,18 @@ export const changelog = [
   {
     title: "New Footer!",
     description: [
-      "I implemented the new footer today!",
-      "It's looking really good! ",
+      `I implemented the new footer today! `,
+      `It's looking really good! `,
     ],
     date: "August 5, 2024",
     img: ftimg,
     chips: ["Design"],
   },
   {
-    title: "Connections Page Revamp",
+    title: "Toolbox Page Revamp",
     description: [
-      "My new Connections page is ready to go!",
-      "I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech.",
+      `My new Toolbox page is ready to go! `,
+      `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech`,
     ],
     date: "August 7, 2024",
     img: "",
