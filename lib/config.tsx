@@ -23,13 +23,18 @@ export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
+    route: "/"
   },
   {
     title: "About",
+    color: "foreground",
+    route: "/about"
+
   },
   {
     title: "Projects",
     color: "foreground",
+    route: "/projects",
   },
 ];
 
@@ -94,7 +99,7 @@ export const HeroTitleData = [
     ],
   },
   {
-    route: "/chanelog",
+    route: "/changelog",
     title: [
       `Changelog`,
       `Here's whats new!`,
@@ -146,8 +151,8 @@ export const footerOptions = [
     title: "Extra",
     routes: [
      {
-        name: "Chanelog",
-        route: "/chanelog",
+        name: "Changelog",
+        route: "/changelog",
       },
       {
         name: "Connections",
