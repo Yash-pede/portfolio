@@ -5,4 +5,36 @@ import warp from "./warp.svg";
 import notion from "./notion.png";
 import vscode from "./vscode.svg";
 import obsidian from "./obsidian-icon.png";
-export { FullBody, Dp, GoogleCalander, warp, notion, vscode, obsidian };
+import spotify from "./spotify.png";
+import chatGPT from "./chatgpt-icon.svg";
+import framer from "./framer.svg";
+import ArchLinux from "./archlinux.svg";
+import Ubuntu from "./Ubuntu.svg";
+import Supabase from "./supabase-logo-icon.svg";
+import Nextjs from "./Next.js.svg";
+import Blender from "./blender.svg";
+import Insomnia from "./Insomnia.svg";
+import Tor from "./tor-browser-icon.svg";
+import PostgresSql from "./postgresql.svg";
+import valo from "./valo.svg";
+export {
+  FullBody,
+  Dp,
+  GoogleCalander,
+  Ubuntu,
+  ArchLinux,
+  warp,
+  notion,
+  vscode,
+  obsidian,
+  chatGPT,
+  spotify,
+  framer,
+  Blender,
+  Insomnia,
+  Supabase,
+  Nextjs,
+  Tor,
+  PostgresSql,
+  valo,
+};
