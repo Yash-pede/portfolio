@@ -1,3 +1,22 @@
+import {
+  ArchLinux,
+  Blender,
+  chatGPT,
+  framer,
+  Insomia,
+  Insomnia,
+  Nextjs,
+  notion,
+  obsidian,
+  PostgresSql,
+  spotify,
+  Supabase,
+  Tor,
+  Ubuntu,
+  valo,
+  vscode,
+  warp,
+} from "@/public/images";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const SiteConfig = {
@@ -81,24 +100,15 @@ export const HeroTitleData = [
   },
   {
     route: "/projects",
-    title: [
-      `A collection of my`,
-      `favorite works`,
-    ],
+    title: [`A collection of my`, `favorite works`],
   },
   {
     route: "/toolbox",
-    title: [
-      `Hardware and software`,
-      `I use on a daily basis.`,
-    ],
+    title: [`Hardware and software`, `I use on a daily basis.`],
   },
   {
     route: "/chanelog",
-    title: [
-      `Changelog`,
-      `Here's whats new!`,
-    ],
+    title: [`Changelog`, `Here's whats new!`],
   },
   {
     route: "/connections",
@@ -145,7 +155,7 @@ export const footerOptions = [
   {
     title: "Extra",
     routes: [
-     {
+      {
         name: "Chanelog",
         route: "/chanelog",
       },
@@ -183,36 +193,123 @@ export const socialLinks = [
   },
 ];
 
-
-export const projects = [
+export const hardware = [
   {
-    title: "ideapad",
+    title: "Laptop",
     description:
       "A technology company that builds economic infrastructure for the internet.",
+    company: "Lenovo",
   },
   {
-    title: "Samsung",
+    title: "Mobile Phone",
     description:
       "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    company: "Samsung",
   },
   {
-    title: "Monitor",
-    description:
-      "A 60 1080x1920p monitor that I use for work and gaming.",
+    title: "Mouse",
+    description: "A 60 1080x1920p monitor that I use for work and gaming.",
+    company: "Dell",
   },
   {
-    title: "Dell",
+    title: "Keyboard",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+    company: "HP",
   },
   {
-    title: "intel",
+    title: "Processor",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    company: "intel",
   },
   {
-    title: "Microsoft",
+    title: "Zuckerberg",
     description:
       "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+    company: "Microsoft",
+  },
+];
+
+export const toolboxData = [
+  {
+    name: "obisidan",
+    link: "https://obsidian.md/",
+    icon: obsidian,
+  },
+  {
+    name: "vscode",
+    link: "https://code.visualstudio.com/",
+    icon: vscode,
+  },
+  {
+    name: "spotify",
+    link: "https://open.spotify.com/",
+    icon: spotify,
+  },
+  {
+    name: "framer",
+    link: "https://www.framer.com/",
+    icon: framer,
+  },
+  {
+    name: "Notion",
+    link: "https://notion.so/",
+    icon: notion,
+  },
+  {
+    name: "Warp",
+    link: "https://warp.dev/",
+    icon: warp,
+  },
+  {
+    name: "Arch Linux",
+    link: "https://archlinux.org/",
+    icon: ArchLinux,
+  },
+  {
+    name: "Ubuntu",
+    link: "https://ubuntu.com/",
+    icon: Ubuntu,
+  },
+  {
+    name: "Tor",
+    link: "https://www.torproject.org/",
+    icon: Tor,
+  },
+  {
+    name: "Blender",
+    link: "https://www.blender.org/",
+    icon: Blender,
+  },
+  {
+    name: "Valorant",
+    link: "https://playvalorant.com/",
+    icon: valo,
+  },
+  {
+    name: "Supabase",
+    link: "https://supabase.com/",
+    icon: Supabase,
+  },
+  {
+    name: "Next.js",
+    link: "https://nextjs.org/",
+    icon: Nextjs,
+  },
+  {
+    name: "PostgreSQL",
+    link: "https://www.postgresql.org/",
+    icon: PostgresSql,
+  },
+  {
+    name: "Insomnia",
+    link: "https://insomnia.rest/",
+    icon: Insomnia,
+  },
+  {
+    name: "chatGPT",
+    link: "https://chat.openai.com/",
+    icon: chatGPT,
   },
 ];
