@@ -14,7 +14,7 @@ const ToolboxPage = () => {
       <div className="mt-14">
         <BentoGrid className="md:max-w-4xl w-full mx-auto flex flex-wrap justify-start items-start md:gap-7">
           {toolboxData.map((data, index)=>(
-            <BentoGridItem
+            <BentoGridItem key={index}
             className={
               "relative w-fit flex gap-2 items-center justify-center flex-col p-7 md:p-10 overflow-visible"
             }
