@@ -17,8 +17,15 @@ import Insomnia from "./Insomnia.svg";
 import Tor from "./tor-browser-icon.svg";
 import PostgresSql from "./postgresql.svg";
 import valo from "./valo.svg";
+import ftimg from "./footerImage.png";
+import AboutSectionFeat from "./aboutsection.png";
+import HomeScreen from "./HomeScreen.png";
+import ToolboxPage from "./toolbox.png";
 export {
   FullBody,
+  AboutSectionFeat,
+  ToolboxPage,
+  HomeScreen,
   Dp,
   GoogleCalander,
   Ubuntu,
@@ -37,4 +44,5 @@ export {
   Tor,
   PostgresSql,
   valo,
+  ftimg,
 };

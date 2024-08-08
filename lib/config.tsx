@@ -1,8 +1,11 @@
 import {
+  AboutSectionFeat,
   ArchLinux,
   Blender,
   chatGPT,
   framer,
+  ftimg,
+  HomeScreen,
   Insomnia,
   Nextjs,
   notion,
@@ -10,6 +13,7 @@ import {
   PostgresSql,
   spotify,
   Supabase,
+  ToolboxPage,
   Tor,
   Ubuntu,
   valo,
@@ -103,7 +107,7 @@ export const HeroTitleData = [
     title: [`Hardware and software`, `I use on a daily basis.`],
   },
   {
-    route: "/chanelog",
+    route: "/changelog",
     title: [`Changelog`, `Here's whats new!`],
   },
   {
@@ -152,8 +156,8 @@ export const footerOptions = [
     title: "Extra",
     routes: [
       {
-        name: "Chanelog",
-        route: "/chanelog",
+        name: "ChangeLog",
+        route: "/changelog",
       },
       {
         name: "Connections",
@@ -309,3 +313,50 @@ export const toolboxData = [
     icon: chatGPT,
   },
 ];
+
+export const changelog = [
+  {
+    title: "New Footer!",
+    description: [
+      `I implemented the new footer today! `,
+    ],
+    date: "August 5, 2024",
+    img: ftimg,
+    chips: ["Design"],
+  },
+  {
+    title: "About Section Revamp",
+    description: [
+      `The about section has been equipped with individually animated and responsive cards, each of which features and connects the viewer to details about me.`,
+    ],
+    date: "August 7, 2024",
+    img: AboutSectionFeat,
+    chips: ["Feature", "Enhancement", "Design"],
+  },
+  {
+    title: "Toolbox Page Revamp",
+    description: [
+      `My new Toolbox page is ready to go! `,
+      `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech.`,
+    ],
+    date: "August 6, 2024",
+    img: ToolboxPage,
+    chips: ["Feature", "Enhancement", "Design"],
+  },
+  {
+    title: "Portfolio Website Launch",
+    description: [
+      `Here's the launch of my Portfolio Page`,
+      `This page features details about me, viz, the projects I have made, people I have and would like to meet and also the softwares and hardwares I use.`,
+    ],
+    date: "August 1, 2024",
+    img: HomeScreen,
+    chips: ["Design"],
+  },
+];
+
+export const chipsColor:any = {
+  Feature: "#5ED49A",
+  Design: "#FBBF35",
+  Enhancement: "#818CF8",
+};
