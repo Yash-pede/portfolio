@@ -322,17 +322,15 @@ export const changelog = [
     title: "New Footer!",
     description: [
       `I implemented the new footer today! `,
-      `It's looking really good! `,
     ],
     date: "August 5, 2024",
     img: ftimg,
     chips: ["Design"],
   },
   {
-    title: "Toolbox Page Revamp",
+    title: "About Section Revamp",
     description: [
-      `My new Toolbox page is ready to go! `,
-      `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech`,
+      `The about section has been equipped with individually animated and responsive cards, each of which features and connects the viewer to details about me.`,
     ],
     date: "August 7, 2024",
     img: AboutSectionFeat,
@@ -342,11 +340,21 @@ export const changelog = [
     title: "Toolbox Page Revamp",
     description: [
       `My new Toolbox page is ready to go! `,
-      `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech`,
+      `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech.`,
     ],
-    date: "August 7, 2024",
+    date: "August 6, 2024",
     img: ToolboxPage,
     chips: ["Feature", "Enhancement", "Design"],
+  },
+  {
+    title: "Portfolio Website Launch",
+    description: [
+      `Here's the launch of my Portfolio Page`,
+      `This page features details about me, viz, the projects I have made, people I have and would like to meet and also the softwares and hardwares I use.`,
+    ],
+    date: "August 1, 2024",
+    img: HomeScreen,
+    chips: ["Design"],
   },
 ];
 

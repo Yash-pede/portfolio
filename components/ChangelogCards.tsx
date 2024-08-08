@@ -17,17 +17,17 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-20 md:gap-40">
+    <div className="flex flex-col w-full h-full justify-center items-center gap-20 md:gap-40">
       {items.map((item, index) => (
         <Card
           key={index}
           className={cn(
-            "max-w-[900px] min-h-[500px] gap-4 bg-transparent border-none shadow-none text-default-500",
+            "md:w-[900px] gap-2 md:gap-3 bg-transparent border-none shadow-none text-default-600",
             className
           )}
         >
-          <CardHeader className="flex flex-row w-full h-full justify-between">
-            <div className="text-sm gap-3 flex">
+          <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2">
+            <div className="text-sm flex gap-2 md:gap-3">
               {item.chips.map((e, i) => (
                 <div
                   key={i}
@@ -47,10 +47,10 @@ export const HoverEffect = ({
             <p className="text-lg text-foreground font-semibold">
               {item.title}
             </p>
-            <p className="text-lg">{item.description}</p>
+            <p className="text-sm md:text-lg">{item.description}</p>
           </CardBody>
           <CardFooter>
-            <Image src={item.img} alt={"Image"} className="w-full h-[50%]"/>
+            <Image src={item.img} alt={"Image"} className="w-full h-full object-contain"/>
           </CardFooter>
         </Card>
       ))}
