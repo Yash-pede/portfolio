@@ -19,6 +19,7 @@ import {
   valo,
   vscode,
   warp,
+  yashSite,
 } from "@/public/images";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
@@ -369,3 +370,18 @@ export const chipsColor:any = {
   Design: "#FBBF35",
   Enhancement: "#818CF8",
 };
+
+export const projects=[
+  {
+    src: HomeScreen,
+    link: "https://building.yashpede.in/",
+    title: "Portfolio Page",
+    description: "A page that describes my projects, connections, software and hardware I use"
+  },
+  {
+    src: yashSite,
+    link: "https://www.protfolio.yashpede.in/",
+    title: "Portfolio Page 2",
+    description: "A page that describes my projects, connections and much more about me"
+  },
+]
