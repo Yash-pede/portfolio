@@ -9,8 +9,9 @@ import {
   AboutCardProjects,
   AboutCardToolbox,
   MeetingScheduling,
-  Resume
+  Resume,
 } from "@/components/aboutSection";
+import MySite from "@/components/MySite";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ScrollingText text="I'm an experienced front-end developer with a passion for design and a knack for tinkering. Web development is my playground, where push boundaries and chase new horizons." />
       <About items={items} />
       <SkillsStagger />
+      <MySite />
     </div>
   );
 }
@@ -37,7 +39,7 @@ const items: {
   },
   {
     className: "md:hidden col-span-2",
-    content:<Resume/>,
+    content: <Resume />,
   },
   {
     className: "col-span-2 md:col-span-1",
