@@ -31,7 +31,7 @@ export const HoverEffect = ({
               {item.chips.map((e, i) => (
                 <div
                   key={i}
-                  className="flex items-center justify-center gap-1 md:gap-3"
+                  className="flex items-center justify-center gap-1 md:gap-2"
                 >
                   <div
                     className={`w-3 h-3 rounded-full`}
