@@ -3,7 +3,7 @@ import { HoverEffect } from "@/components/ChangelogCards";
 import { changelog } from "@/lib/config";
 import React from "react";
 
-const ChanelogPage = () => {
+const ChangeLogPage = () => {
   return (
     <div>
       <HoverEffect className="flex flex-col" items={changelog} />
@@ -11,4 +11,4 @@ const ChanelogPage = () => {
   );
 };
 
-export default ChanelogPage;
+export default ChangeLogPage;
