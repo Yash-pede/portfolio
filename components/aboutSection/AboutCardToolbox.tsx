@@ -3,10 +3,14 @@ import { Globe } from "../ui/CobeGlobe";
 import { notion, obsidian, vscode, warp } from "@/public/images";
 import { ArrowUpRightFromCircle } from "lucide-react";
 import Link from "next/link";
+import { tools } from "@/lib/config";
 
 export const AboutCardToolbox = () => {
   return (
-    <Link href="/toolbox" className="relative w-full h-full flex flex-col p-4 md:p-6 group">
+    <Link
+      href="/toolbox"
+      className="relative w-full h-full flex flex-col p-4 md:p-6 group"
+    >
       <div className="w-full h-full flex flex-col text-start gap-3 text-foreground max-w-[60%]">
         <h3 className="text-xl">Toolbox</h3>
         <p className="text-sm text-foreground/80">
@@ -61,10 +65,3 @@ export const AboutCardToolbox = () => {
     </Link>
   );
 };
-
-const tools = [
-  { src: obsidian, angle: 0 },
-  { src: vscode, angle: 90 },
-  { src: notion, angle: 180 },
-  { src: warp, angle: 270 },
-];

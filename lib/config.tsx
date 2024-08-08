@@ -45,13 +45,17 @@ export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
+    route: "/",
   },
   {
     title: "About",
+    color: "foreground",
+    route: "/about",
   },
   {
     title: "Projects",
     color: "foreground",
+    route: "/projects",
   },
 ];
 
@@ -320,9 +324,7 @@ export const toolboxData = [
 export const changelog = [
   {
     title: "New Footer!",
-    description: [
-      `I implemented the new footer today! `,
-    ],
+    description: [`I implemented the new footer today! `],
     date: "August 5, 2024",
     img: ftimg,
     chips: ["Design"],
@@ -358,8 +360,16 @@ export const changelog = [
   },
 ];
 
-export const chipsColor:any = {
+export const chipsColor: any = {
   Feature: "#5ED49A",
   Design: "#FBBF35",
   Enhancement: "#818CF8",
+  Bugfix: "#EF5CA6",
 };
+
+export const tools = [
+  { src: obsidian, angle: 0, link: "https://obsidian.md/" },
+  { src: vscode, angle: 90, link: "https://code.visualstudio.com/" },
+  { src: notion, angle: 180, link: "https://notion.so/" },
+  { src: warp, angle: 270, link: "https://warp.dev/" },
+];
