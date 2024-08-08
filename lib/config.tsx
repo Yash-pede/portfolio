@@ -337,8 +337,8 @@ export const changelog = [
   },
 ];
 
-export const chipsColor = {
-  Feature: "#5ED49A",
-  Design: "#FBBF35",
-  Enhancement: "#818CF8",
-};
+export const chipsColor = [
+  {Feature: "#5ED49A"},
+  {Design: "#FBBF35"},
+  {Enhancement: "#818CF8"},
+];

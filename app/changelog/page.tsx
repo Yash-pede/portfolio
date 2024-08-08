@@ -1,5 +1,5 @@
 "use client";
-import { HoverEffect } from "@/components/ui/cardHoverEffect";
+import { HoverEffect } from "@/components/ChangelogCards";
 import { changelog } from "@/lib/config";
 import React from "react";
 
