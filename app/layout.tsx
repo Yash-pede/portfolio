@@ -18,6 +18,9 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: SiteConfig.site.name,
   description: SiteConfig.site.description,
+  verification:{
+    google:"W5Me7t9onbCSbpUugk9Pw2XP_KuYnu5IytE1h8eLVJg"
+  }
 };
 
 export default function RootLayout({
