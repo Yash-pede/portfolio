@@ -39,19 +39,28 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
+  resumeLink:"/",
 };
 
 export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
+    link:"/"
   },
   {
     title: "About",
+    link:"/about",
+    color: "foreground",
   },
   {
     title: "Projects",
     color: "foreground",
+    link:"/projects"
+  },
+  {
+    title: "Resume",
+    link: SiteConfig.resumeLink,
   },
 ];
 
@@ -165,11 +174,11 @@ export const footerOptions = [
       },
       {
         name: "Resume",
-        route: "/resume",
+        route: SiteConfig.resumeLink,
       },
       {
         name: "Snippets",
-        route: "/snippets",
+        route: "/",
       },
     ],
   },
