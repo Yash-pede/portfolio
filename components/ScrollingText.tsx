@@ -10,7 +10,7 @@ const ScrollingText = ({ text }: { text: string }) => {
   });
   const words = text.split(" ");
   return (
-    <p ref={element} className="hidden xl:flex text-5xl flex-wrap justify-center items-center leading-relaxed text-center font-light">
+    <p ref={element} className="hidden xl:flex text-5xl flex-wrap justify-center items-center leading-relaxed text-center font-light md:max-w-5xl mx-auto">
       {words.map((word, index) => {
         const start = index / words.length;
         const end = start + 1 / words.length;
