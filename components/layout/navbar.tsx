@@ -50,11 +50,11 @@ export default function MainNavbar() {
                 index === 1
                   ? "primary"
                   : index === menuItems.length - 1
-                  ? "danger"
+                  ? "success"
                   : "foreground"
               }
               className="w-full"
-              href={item.toLowerCase().replace(" ", "-")}
+              href={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
               size="lg"
             >
               {item}

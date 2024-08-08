@@ -58,11 +58,11 @@ export const NavbarItems = [
 export const menuItems = [
   "Home",
   "About",
-  "Projects",
+  "resume",
   "Toolbox",
+  "Projects",
   "Changelog",
   "Connections",
-  "resume",
 ];
 
 export const skills = [
