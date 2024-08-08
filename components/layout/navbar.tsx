@@ -47,14 +47,14 @@ export default function MainNavbar() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
-                index === 2
+                index === 1
                   ? "primary"
                   : index === menuItems.length - 1
                   ? "danger"
                   : "foreground"
               }
               className="w-full"
-              href="#"
+              href={item.toLowerCase().replace(" ", "-")}
               size="lg"
             >
               {item}
