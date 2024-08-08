@@ -6,29 +6,30 @@ import {
   CardBody,
   CardFooter,
   CardHeader,
-  Divider,
+  Divider
 } from "@nextui-org/react";
 
 export const HoverEffect = ({
   items,
-  classNamee,
+  className,
 }: {
   items: {
     title: string;
     description: string;
-    description2?: string;
-    company?: string;
-    date?: string;
-    img?: any;
-    chips?: string[];
+    company: string;
   }[];
-  classNamee?: string;
+  className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10">
-      {...items.map((item, idx) => (
+    <div
+      className={cn(
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        className
+      )}
+    >
+      {items.map((item, idx) => (
         <div
           key={idx}
           className="relative group  block p-2 h-full w-full"
@@ -53,7 +54,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
 
-          <Card className={cn("max-w-[400px] min-h-56 z-20",classNamee)}>
+          <Card className="max-w-[400px] min-h-56 z-20">
             <CardHeader className="flex gap-3">
               <div className="flex flex-col">
                 <p className="text-md">{item.title}</p>
@@ -61,10 +62,8 @@ export const HoverEffect = ({
               </div>
             </CardHeader>
             <Divider />
-            <CardBody className="gap-3">
+            <CardBody>
               <p>{item.description}</p>
-              <p>{item.description2}</p>
-              {/* <div>{item.img}</div> */}
             </CardBody>
           </Card>
         </div>

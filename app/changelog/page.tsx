@@ -6,7 +6,7 @@ import React from "react";
 const ChanelogPage = () => {
   return (
     <div>
-      <HoverEffect items={changelog} classNamee={"w-full flex flex-col"}/>
+      <HoverEffect className="flex flex-col" items={changelog} />
     </div>
   );
 };
