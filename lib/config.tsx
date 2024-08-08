@@ -177,10 +177,6 @@ export const footerOptions = [
         name: "Resume",
         route: SiteConfig.resumeLink,
       },
-      {
-        name: "Snippets",
-        route: "/",
-      },
     ],
   },
 ];
