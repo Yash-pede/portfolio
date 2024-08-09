@@ -39,7 +39,7 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
-  resumeLink: "/",
+  resumeLink: "https://drive.google.com/file/d/14CFZYzuWXcZZGJ-RXRID7IkdD55LSeYz/view?usp=sharing",
 };
 
 export const NavbarItems = [
