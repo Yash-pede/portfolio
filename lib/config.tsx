@@ -39,37 +39,39 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
+  resumeLink: "/",
 };
 
 export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
-    route: "/",
+    link: "/",
   },
   {
     title: "About",
+    link: "/about",
     color: "foreground",
-    route: "/about",
   },
   {
     title: "Projects",
     color: "foreground",
-    route: "/projects",
+    link: "/projects",
+  },
+  {
+    title: "Resume",
+    link: SiteConfig.resumeLink,
   },
 ];
 
 export const menuItems = [
-  "Profile",
-  "Dashboard",
-  "Activity",
-  "Analytics",
-  "System",
-  "Deployments",
-  "My Settings",
-  "Team Settings",
-  "Help & Feedback",
-  "Log Out",
+  "Home",
+  "About",
+  "resume",
+  "Toolbox",
+  "Projects",
+  "Changelog",
+  "Connections",
 ];
 
 export const skills = [
@@ -172,11 +174,11 @@ export const footerOptions = [
       },
       {
         name: "Resume",
-        route: "/resume",
+        route: SiteConfig.resumeLink,
       },
       {
         name: "Snippets",
-        route: "/snippets",
+        route: "/",
       },
     ],
   },
@@ -330,22 +332,22 @@ export const changelog = [
     chips: ["Design"],
   },
   {
-    title: "About Section Revamp",
-    description: [
-      `The about section has been equipped with individually animated and responsive cards, each of which features and connects the viewer to details about me.`,
-    ],
-    date: "August 7, 2024",
-    img: AboutSectionFeat,
-    chips: ["Feature", "Enhancement", "Design"],
-  },
-  {
     title: "Toolbox Page Revamp",
     description: [
       `My new Toolbox page is ready to go! `,
       `I'm proud of the this redesigned page, which showcases softwares and hardwares I've used in tech.`,
     ],
-    date: "August 6, 2024",
+    date: "August 8, 2024",
     img: ToolboxPage,
+    chips: ["Feature", "Enhancement", "Design"],
+  },
+  {
+    title: "Adding About Section",
+    description: [
+      `The about section has been equipped with individually animated and responsive cards, each of which features and connects the viewer to details about me.`,
+    ],
+    date: "August 5, 2024",
+    img: AboutSectionFeat,
     chips: ["Feature", "Enhancement", "Design"],
   },
   {
@@ -368,8 +370,8 @@ export const chipsColor: any = {
 };
 
 export const tools = [
-  { src: obsidian, angle: 0, link: "https://obsidian.md/" },
-  { src: vscode, angle: 90, link: "https://code.visualstudio.com/" },
-  { src: notion, angle: 180, link: "https://notion.so/" },
-  { src: warp, angle: 270, link: "https://warp.dev/" },
+  { src: obsidian, angle: 0 },
+  { src: vscode, angle: 90 },
+  { src: notion, angle: 180 },
+  { src: warp, angle: 270 },
 ];

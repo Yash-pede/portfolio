@@ -9,12 +9,19 @@ import {
   AboutCardProjects,
   AboutCardToolbox,
   MeetingScheduling,
-  Resume
+  Resume,
 } from "@/components/aboutSection";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-36">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="W5Me7t9onbCSbpUugk9Pw2XP_KuYnu5IytE1h8eLVJg"
+        />
+      </Head>
       <GithubContributions />
       <ScrollingText text="I'm an experienced front-end developer with a passion for design and a knack for tinkering. Web development is my playground, where push boundaries and chase new horizons." />
       <About items={items} />
@@ -37,7 +44,7 @@ const items: {
   },
   {
     className: "md:hidden col-span-2",
-    content:<Resume/>,
+    content: <Resume />,
   },
   {
     className: "col-span-2 md:col-span-1",

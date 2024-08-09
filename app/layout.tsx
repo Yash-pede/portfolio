@@ -18,6 +18,9 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: SiteConfig.site.name,
   description: SiteConfig.site.description,
+  verification:{
+    google:"W5Me7t9onbCSbpUugk9Pw2XP_KuYnu5IytE1h8eLVJg"
+  }
 };
 
 export default function RootLayout({
@@ -31,8 +34,8 @@ export default function RootLayout({
         <NextUIProviders>
           <MainNavbar />
           <HeroTitle />
-          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto min-h-screen flex flex-col mt-7 ">
-            <div className="flex-grow">{children}</div>
+          <div className="px-5 md:max-w-5xl lg:max-w-6xl !container mx-auto min-h-screen flex flex-col mt-7 ">
+            {children}
           </div>
           <Footer />
         </NextUIProviders>

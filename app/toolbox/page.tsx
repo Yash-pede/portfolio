@@ -12,7 +12,7 @@ const ToolboxPage = () => {
         Applications
       </h4>
       <div className="mt-14">
-        <BentoGrid className="md:max-w-4xl w-full mx-auto flex flex-wrap justify-start items-start md:gap-7">
+        <BentoGrid className="md:max-w-4xl w-full mx-auto grid-cols-2 md:flex flex-wrap justify-start items-start md:gap-7">
           {toolboxData.map((data, index) => (
             <BentoGridItem
               key={index}
@@ -30,11 +30,11 @@ const ToolboxPage = () => {
                 <Image
                   src={data.icon}
                   alt={`${data.name}+"Logo"`}
-                  className="size-28"
+                  className="size-16 sm:size-24 md:size-28"
                   width={120}
                   height={120}
                 />
-                <p className="text-xl z-10 capitalize">{data.name}</p>
+                <p className="text-small hidden sm:block md:text-xl z-10 capitalize truncate">{data.name}</p>
               </Link>
             </BentoGridItem>
           ))}
