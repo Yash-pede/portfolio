@@ -40,24 +40,24 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
-  resumeLink:"/",
+  resumeLink: "/",
 };
 
 export const NavbarItems = [
   {
     title: "Home",
     color: "foreground",
-    link:"/"
+    link: "/",
   },
   {
     title: "About",
-    link:"/about",
+    link: "/about",
     color: "foreground",
   },
   {
     title: "Projects",
     color: "foreground",
-    link:"/projects"
+    link: "/projects",
   },
   {
     title: "Resume",
@@ -323,9 +323,7 @@ export const toolboxData = [
 export const changelog = [
   {
     title: "New Footer!",
-    description: [
-      `I implemented the new footer today! `,
-    ],
+    description: [`I implemented the new footer today! `],
     date: "August 10, 2024",
     img: ftimg,
     chips: ["Design"],
@@ -361,23 +359,32 @@ export const changelog = [
   },
 ];
 
-export const chipsColor:any = {
+export const chipsColor: any = {
   Feature: "#5ED49A",
   Design: "#FBBF35",
   Enhancement: "#818CF8",
 };
 
-export const projects=[
+export const projects = [
   {
     src: HomeScreen,
     link: "https://building.yashpede.in/",
     title: "Portfolio Page",
-    description: "A page that describes my projects, connections, software and hardware I use"
+    description:
+      "A page that describes my projects, connections, software and hardware I use",
   },
   {
     src: yashSite,
     link: "https://www.protfolio.yashpede.in/",
     title: "Portfolio Page 2",
-    description: "A page that describes my projects, connections and much more about me"
+    description:
+      "A page that describes my projects, connections and much more about me",
   },
-]
+];
+
+export const tools = [
+  { src: obsidian, angle: 0 },
+  { src: vscode, angle: 90 },
+  { src: notion, angle: 180 },
+  { src: warp, angle: 270 },
+];
