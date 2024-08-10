@@ -33,7 +33,7 @@ export default function MainNavbar() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {NavbarItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`}>
-            <Link color={item.color ? (item.color as any) : "primary"} href="#">
+            <Link color={item.color ? (item.color as any) : "primary"} href={item.link}>
               {item.title}
             </Link>
           </NavbarItem>

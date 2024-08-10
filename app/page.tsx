@@ -9,7 +9,7 @@ import {
   AboutCardProjects,
   AboutCardToolbox,
   MeetingScheduling,
-  Resume
+  Resume,
 } from "@/components/aboutSection";
 
 export default function Home() {
@@ -37,7 +37,7 @@ const items: {
   },
   {
     className: "md:hidden col-span-2",
-    content:<Resume/>,
+    content: <Resume />,
   },
   {
     className: "col-span-2 md:col-span-1",
