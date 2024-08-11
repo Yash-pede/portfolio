@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const HoverEffect = ({
+export const MinorEffect = ({
   items,
   className,
 }: {
@@ -16,16 +16,16 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   return (
-    <div className="flex flex-col w-full h-full justify-center items-center gap-20 lg:gap-40">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-cols-3 py-10">
       {items.map((item, index) => (
         <Card
           key={index}
           className={cn(
-            "lg:w-[900px] gap-2 md:gap-3 bg-transparent border-none shadow-none text-default-600",
+            "relative group gap-3 block p-2 h-full w-[90%]] bg-transparent",
             className
           )}
         >
-          <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2">
+          <CardHeader className="flex gap-3">
             <Link href={item.link}>
               <Image
                 src={item.src}
@@ -35,10 +35,10 @@ export const HoverEffect = ({
             </Link>
           </CardHeader>
           <CardBody className="gap-5">
-            <p className="text-xl md:text-2xl text-foreground font-semibold">
+            <p className="text-xl md:text-xl text-foreground font-semibold">
               {item.title}
             </p>
-            <p className="text-base md:text-lg">{item.description}</p>
+            <p className="text-lg md:text-lg text-slate-300">{item.description}</p>
           </CardBody>
         </Card>
       ))}
