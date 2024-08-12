@@ -22,6 +22,7 @@ import AboutSectionFeat from "./aboutsection.png";
 import HomeScreen from "./HomeScreen.png";
 import ToolboxPage from "./toolbox.png";
 import yashSite from "./yashSite.png"
+import pp from "./adminpp.png";
 export {
   FullBody,
   AboutSectionFeat,
@@ -47,4 +48,5 @@ export {
   valo,
   ftimg,
   yashSite,
+  pp,
 };
