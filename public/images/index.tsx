@@ -21,6 +21,7 @@ import ftimg from "./footerImage.png";
 import AboutSectionFeat from "./aboutsection.png";
 import HomeScreen from "./HomeScreen.png";
 import ToolboxPage from "./toolbox.png";
+import pp from "./adminpp.png";
 export {
   FullBody,
   AboutSectionFeat,
@@ -45,4 +46,5 @@ export {
   PostgresSql,
   valo,
   ftimg,
+  pp,
 };
