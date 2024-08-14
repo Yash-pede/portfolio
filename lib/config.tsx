@@ -391,7 +391,14 @@ export const tools = [
   { src: warp, angle: 270 },
 ];
 
-export const minorProjects = [
+export const  minorProjects = [
+  {
+    src: HomeScreen,
+    link: "https://building.yashpede.in/",
+    title: "Portfolio Page",
+    description:
+      "A page that describes my projects, connections, software and hardware I use",
+  },
   {
     src: HomeScreen,
     link: "https://building.yashpede.in/",

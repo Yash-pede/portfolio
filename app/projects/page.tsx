@@ -1,16 +1,16 @@
-import { HoverEffect } from "@/components/ProjectsCard";
-import { MinorEffect } from "@/components/MinorProjectsCard";
+import SectionHeading from "@/components/layout/SectionHeading";
+import { ProjectsCard } from "@/components/ProjectsCard";
 import { projects, minorProjects } from "@/lib/config";
 import React from "react";
 
 const ProjectsPage = () => {
   return (
     <div>
-      <HoverEffect items={projects} />
+      <ProjectsCard items={projects} className="lg:w-[900px]" />
 
-      <div className="pt-20">
-        <p className="text-4xl flex justify-center pb-10">Minor Projects</p>
-        <MinorEffect items={minorProjects} />
+      <div className="flex flex-col text-center w-full justify-center items-center gap-10 mt-20">
+        <SectionHeading title="Fun Projects" subtitle="Minor Projects" />
+        <ProjectsCard items={minorProjects} containerClassName="flex flex-wrap justify-center gap-3 items-center flex-row"  className=" w-[40%] "   />
       </div>
     </div>
   );
