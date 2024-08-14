@@ -4,6 +4,11 @@ import Image from "next/image";
 import { Link } from "@nextui-org/react";
 import { HoverEffect } from "@/components/ui/cardHoverEffect";
 import { hardware, toolboxData } from "@/lib/config";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Toolbox",
+};
 
 const ToolboxPage = () => {
   return (
@@ -34,7 +39,9 @@ const ToolboxPage = () => {
                   width={120}
                   height={120}
                 />
-                <p className="text-small hidden sm:block md:text-xl z-10 capitalize truncate">{data.name}</p>
+                <p className="text-small hidden sm:block md:text-xl z-10 capitalize truncate">
+                  {data.name}
+                </p>
               </Link>
             </BentoGridItem>
           ))}
