@@ -1,5 +1,13 @@
 import { cn } from "@/lib/utils";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import { Nextjs } from "@/public/images";
+import {
+  Avatar,
+  AvatarGroup,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+} from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,6 +15,7 @@ export const ProjectsCard = ({
   items,
   containerClassName,
   className,
+  showFooter = false,
 }: {
   items: {
     title: string;
@@ -16,9 +25,15 @@ export const ProjectsCard = ({
   }[];
   className?: string;
   containerClassName?: string;
+  showFooter?: boolean;
 }) => {
   return (
-    <div className={cn("flex flex-col w-full h-full justify-center items-center gap-20 lg:gap-40",containerClassName)}>
+    <div
+      className={cn(
+        "flex flex-col w-full h-full justify-center items-center gap-20 lg:gap-40",
+        containerClassName
+      )}
+    >
       {items.map((item, index) => (
         <Card
           as={Link}
@@ -30,7 +45,11 @@ export const ProjectsCard = ({
           )}
         >
           <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2">
-            <Image src={item.src} className="flex gap-2 md:gap-3" alt="Image" />
+            <Image
+              src={item.src}
+              className="flex gap-2 md:gap-3 rounded-lg"
+              alt="Image"
+            />
           </CardHeader>
           <CardBody className="gap-5">
             <p className="text-xl md:text-2xl text-foreground font-semibold">
@@ -38,6 +57,18 @@ export const ProjectsCard = ({
             </p>
             <p className="text-base md:text-lg">{item.description}</p>
           </CardBody>
+          {showFooter && (
+            <CardFooter hidden={!showFooter}>
+              <AvatarGroup isBordered>
+                <Avatar src="/images/Next.js.svg" />
+                <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+                <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+              </AvatarGroup>
+            </CardFooter>
+          )}
         </Card>
       ))}
     </div>
