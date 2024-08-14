@@ -27,6 +27,7 @@ export const SiteConfig = {
   site: {
     name: "Name",
     description: "a portfolio",
+    url:"https://building.yashpede.in/",
   },
   user: {
     firstName: "firstName",
