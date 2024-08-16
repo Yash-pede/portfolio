@@ -61,11 +61,9 @@ export const ProjectsCard = ({
             <CardFooter hidden={!showFooter}>
               <AvatarGroup isBordered>
                 <Avatar src="/images/Next.js.svg" />
-                <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
-                <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
-                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
-                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
-                <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+                <Avatar src="/images/re.svg" />
+                <Avatar src="/images/tail.svg" />
+                <Avatar src="/images/ts.svg" />
               </AvatarGroup>
             </CardFooter>
           )}

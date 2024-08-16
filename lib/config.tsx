@@ -6,11 +6,13 @@ import {
   framer,
   ftimg,
   HomeScreen,
+  initialPortfolio,
   Insomnia,
   Nextjs,
   notion,
   obsidian,
   PostgresSql,
+  Saas,
   spotify,
   Supabase,
   ToolboxPage,
@@ -367,23 +369,6 @@ export const chipsColor: any = {
   Bugfix: "#EF5CA6",
 };
 
-export const projects = [
-  {
-    src: HomeScreen,
-    link: "https://building.yashpede.in/",
-    title: "Portfolio Page",
-    description:
-      "A page that describes my projects, connections, software and hardware I use",
-  },
-  {
-    src: yashSite,
-    link: "https://www.protfolio.yashpede.in/",
-    title: "Portfolio Page 2",
-    description:
-      "A page that describes my projects, connections and much more about me",
-  },
-];
-
 export const tools = [
   { src: obsidian, angle: 0 },
   { src: vscode, angle: 90 },
@@ -391,33 +376,43 @@ export const tools = [
   { src: warp, angle: 270 },
 ];
 
-export const  minorProjects = [
+export const projects = [
   {
-    src: HomeScreen,
+    src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
     link: "https://building.yashpede.in/",
     title: "Portfolio Page",
     description:
       "A page that describes my projects, connections, software and hardware I use",
   },
   {
-    src: HomeScreen,
-    link: "https://building.yashpede.in/",
+    src: ["/images/yashSite.png", "/images/dp.jpg"],
+    link: "https://www.protfolio.yashpede.in/",
+    title: "Portfolio Page 2",
+    description:
+      "A page that describes my projects, connections and much more about me",
+  },
+];
+
+export const minorProjects = [
+  {
+    src: yashSite,
+    link: "https://www.protfolio.yashpede.in/",
     title: "Portfolio Page",
     description:
-      "A page that describes my projects, connections, software and hardware I use",
+      "Explore the my portfolio with this captivating 3D simulation of the my workstation using Three.js.",
   },
   {
-    src: HomeScreen,
-    link: "https://building.yashpede.in/",
-    title: "Portfolio Page",
+    src: initialPortfolio,
+    link: "https://www.initialportfolio.yashpede.in/",
+    title: "Minimal Portfolio",
     description:
-      "A page that describes my projects, connections, software and hardware I use",
+      "A portfolio website for a web developer.",
   },
   {
-    src: HomeScreen,
-    link: "https://building.yashpede.in/",
-    title: "Portfolio Page",
+    src: Saas,
+    link: "https://www.shrewit.shop/",
+    title: "AI NoteTaking SaaS - Web Application",
     description:
-      "A page that describes my projects, connections, software and hardware I use",
+      "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
   },
 ];
