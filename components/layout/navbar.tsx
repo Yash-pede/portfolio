@@ -24,7 +24,8 @@ export default function MainNavbar() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
+        {/* @ts-ignore */}
+        <NavbarBrand as={Link} href="/" color="foreground">
           <Braces />
           <p className="font-bold text-inherit">{SiteConfig.title}</p>
         </NavbarBrand>
