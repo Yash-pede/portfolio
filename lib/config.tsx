@@ -6,11 +6,13 @@ import {
   framer,
   ftimg,
   HomeScreen,
+  initialPortfolio,
   Insomnia,
   Nextjs,
   notion,
   obsidian,
   PostgresSql,
+  Saas,
   spotify,
   Supabase,
   ToolboxPage,
@@ -19,6 +21,7 @@ import {
   valo,
   vscode,
   warp,
+  yashSite,
 } from "@/public/images";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
@@ -39,7 +42,8 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
   },
   title: "ACME",
-  resumeLink: "https://drive.google.com/file/d/14CFZYzuWXcZZGJ-RXRID7IkdD55LSeYz/view?usp=sharing",
+  resumeLink:
+    "https://drive.google.com/file/d/14CFZYzuWXcZZGJ-RXRID7IkdD55LSeYz/view?usp=sharing",
 };
 
 export const NavbarItems = [
@@ -175,10 +179,6 @@ export const footerOptions = [
       {
         name: "Resume",
         route: SiteConfig.resumeLink,
-      },
-      {
-        name: "Snippets",
-        route: "/",
       },
     ],
   },
@@ -327,7 +327,7 @@ export const changelog = [
   {
     title: "New Footer!",
     description: [`I implemented the new footer today! `],
-    date: "August 5, 2024",
+    date: "August 10, 2024",
     img: ftimg,
     chips: ["Design"],
   },
@@ -374,4 +374,45 @@ export const tools = [
   { src: vscode, angle: 90 },
   { src: notion, angle: 180 },
   { src: warp, angle: 270 },
+];
+
+export const projects = [
+  {
+    src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
+    link: "https://building.yashpede.in/",
+    title: "Portfolio Page",
+    description:
+      "A page that describes my projects, connections, software and hardware I use",
+  },
+  {
+    src: ["/images/yashSite.png", "/images/dp.jpg"],
+    link: "https://www.protfolio.yashpede.in/",
+    title: "Portfolio Page 2",
+    description:
+      "A page that describes my projects, connections and much more about me",
+  },
+];
+
+export const minorProjects = [
+  {
+    src: yashSite,
+    link: "https://www.protfolio.yashpede.in/",
+    title: "Portfolio Page",
+    description:
+      "Explore the my portfolio with this captivating 3D simulation of the my workstation using Three.js.",
+  },
+  {
+    src: initialPortfolio,
+    link: "https://www.initialportfolio.yashpede.in/",
+    title: "Minimal Portfolio",
+    description:
+      "A portfolio website for a web developer.",
+  },
+  {
+    src: Saas,
+    link: "https://www.shrewit.shop/",
+    title: "AI NoteTaking SaaS - Web Application",
+    description:
+      "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+  },
 ];
