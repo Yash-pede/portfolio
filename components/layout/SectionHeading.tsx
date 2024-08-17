@@ -4,7 +4,7 @@ const SectionHeading = ({
   title,
   subtitle,
 }: {
-  title: string;
+  title?: string;
   subtitle: string;
 }) => {
   return (

@@ -21,7 +21,13 @@ import ftimg from "./footerImage.png";
 import AboutSectionFeat from "./aboutsection.png";
 import HomeScreen from "./HomeScreen.png";
 import ToolboxPage from "./toolbox.png";
+import yashSite from "./yashSite.png"
 import pp from "./adminpp.png";
+import initialPortfolio from "./initialPortfolio.png";
+import Saas from "./Saas.png";
+import re from "./re.svg"
+import tail from "./tail.svg"
+import ts from "./ts.svg"
 export {
   FullBody,
   AboutSectionFeat,
@@ -46,5 +52,11 @@ export {
   PostgresSql,
   valo,
   ftimg,
+  yashSite,
   pp,
+  initialPortfolio,
+  Saas,
+  tail,
+  ts,
+  re,
 };
