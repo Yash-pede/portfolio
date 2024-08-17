@@ -1,9 +1,11 @@
+import { SiteConfig } from "@/lib/config";
 import { Button, Card, Skeleton } from "@nextui-org/react";
+import Link from "next/link";
 import React from "react";
 
 export const Resume = () => {
   return (
-    <div className="w-full h-full inset-0 flex flex-col gap-3 px-5 py-3 relative -z-10">
+    <Link href={SiteConfig.resumeLink} target="_blank" className="w-full h-full inset-0 flex flex-col gap-3 px-5 py-3 relative -z-10">
       <Card
         className="w-full space-y-5 p-4 "
         radius="lg"
@@ -30,6 +32,6 @@ export const Resume = () => {
       >
         Resume
       </Button>
-    </div>
+    </Link>
   );
 };

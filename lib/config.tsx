@@ -386,7 +386,7 @@ export const projects = [
   },
   {
     src: ["/images/yashSite.png", "/images/dp.jpg"],
-    link: "https://www.protfolio.yashpede.in/",
+    link: "https://www.protfolio.yashpede.in/", 
     title: "Portfolio Page 2",
     description:
       "A page that describes my projects, connections and much more about me",
