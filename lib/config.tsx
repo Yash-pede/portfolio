@@ -213,7 +213,7 @@ export const hardware = [
   {
     title: "Mobile Phone",
     description:
-      "SAMSUNG Galaxy S23 FE (Mint, 128 GB)  (8 GB RAM)",
+      "SAMSUNG Galaxy S23 FE (Mint, 128 GB)  (8 GB RAM). Old phone - Mi A3 (blue, 64 GB) (4 GB RAM) for live preview.",
     company: "Samsung",
   },
   {
