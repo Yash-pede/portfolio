@@ -32,8 +32,8 @@ const ProjectsPage = () => {
         <SectionHeading title="Fun Projects" subtitle="More Projects" />
         <ProjectsCard
           items={minorProjects}
-          containerClassName="flex flex-wrap justify-center gap-3 items-center flex-row"
-          className="w-[40%]"
+          containerClassName="flex flex-wrap justify-center gap-3 items-center md:flex-row"
+          className="md:w-[40%] w-full"
           // showFooter
         />
       </div>

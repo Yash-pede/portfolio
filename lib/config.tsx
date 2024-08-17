@@ -326,6 +326,13 @@ export const toolboxData = [
 
 export const changelog = [
   {
+    title: "Projects Page",
+    description: [`I redesigned the projects page!`],
+    date: "August 15, 2024",
+    img: ftimg,
+    chips: ["Design", "Enhancement", "Feature"],
+  },
+  {
     title: "New Footer!",
     description: [`I implemented the new footer today! `],
     date: "August 10, 2024",
@@ -386,8 +393,8 @@ export const projects = [
       "A modern portfolio website that showcases my projects, connections and much more about me",
   },
   {
-    src: ["/images/pp.png", "/images/pp1.png","/images/pp2.png"],
-    link: "https://www.admin.purepridepharma.in/", 
+    src: ["/images/pp.png", "/images/pp1.png", "/images/pp2.png"],
+    link: "https://www.admin.purepridepharma.in/",
     title: "Pure Pride Pharma ",
     description:
       "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
@@ -406,9 +413,8 @@ export const minorProjects = [
     src: initialPortfolio,
     link: "https://www.initialportfolio.yashpede.in/",
     title: "Minimal Portfolio",
-    description:
-      "A portfolio website for a web developer.",
-  },    
+    description: "A portfolio website for a web developer.",
+  },
   {
     src: Saas,
     link: "https://www.shrewit.shop/",
