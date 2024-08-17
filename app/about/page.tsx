@@ -8,6 +8,7 @@ import {
   MeetingScheduling,
   Resume,
 } from "@/components/aboutSection";
+import { Metadata } from "next";
 
 const AboutPage = () => {
   return (

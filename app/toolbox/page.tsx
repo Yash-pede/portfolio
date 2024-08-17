@@ -34,7 +34,9 @@ const ToolboxPage = () => {
                   width={120}
                   height={120}
                 />
-                <p className="text-small hidden sm:block md:text-xl z-10 capitalize truncate">{data.name}</p>
+                <p className="text-small hidden sm:block md:text-xl z-10 capitalize truncate">
+                  {data.name}
+                </p>
               </Link>
             </BentoGridItem>
           ))}

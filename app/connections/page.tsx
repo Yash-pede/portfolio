@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const ConnectionsPage = () => {
-  return (
-    <div>ConnectionsPage</div>
-  )
-}
+  return <div>ConnectionsPage</div>;
+};
 
 export default ConnectionsPage;
