@@ -207,37 +207,37 @@ export const hardware = [
   {
     title: "Laptop",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    company: "Lenovo",
+      "HP Pavilion Gaming AMD Ryzen 5 Quad Core 3550H - (8 + 8 GB/1 TB HDD + 512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) ",
+    company: "HP",
   },
   {
     title: "Mobile Phone",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "SAMSUNG Galaxy S23 FE (Mint, 128 GB)  (8 GB RAM)",
     company: "Samsung",
   },
   {
-    title: "Mouse",
-    description: "A 60 1080x1920p monitor that I use for work and gaming.",
+    title: "Mouse/Keyboard",
+    description: "Mechanical Keyboard",
+    company: "Coconut",
+  },
+  {
+    title: "Microphone",
+    description:
+      "BOYA BY-M1 Omnidirectional With Mount 2 Condenser Camera Mic 20ft Audio Cable Microphone",
+    company: "Boya",
+  },
+  {
+    title: "External SSD",
+    description:
+      "A 128 GB SSD drive to use it as a on the go storage and secondary os to play arond.",
+    company: "Seagade",
+  },
+  {
+    title: "Old Lappy",
+    description:
+      "DELL Inspiron - Intel Pentium Quad Core, 4GB RAM , 1TB HDD; aside the specs I have so much attached to this laptop it was my first love and after so many years I still love it and kept it alive.",
     company: "Dell",
-  },
-  {
-    title: "Keyboard",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    company: "HP",
-  },
-  {
-    title: "Processor",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    company: "intel",
-  },
-  {
-    title: "Zuckerberg",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    company: "Microsoft",
   },
 ];
 
