@@ -380,7 +380,7 @@ export const tools = [
 export const projects = [
   {
     src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
-    link: "https://building.yashpede.in/",
+    link: "https://yashpede.in/",
     title: "Portfolio Page",
     description:
       "A modern portfolio website that showcases my projects, connections and much more about me",
