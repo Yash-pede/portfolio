@@ -34,7 +34,7 @@ export default function RootLayout({
         <NextUIProviders>
           <MainNavbar />
           <HeroTitle />
-          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto min-h-screen flex flex-col mt-7 !overflow-hidden ">
+          <div className="px-5 md:max-w-5xl lg:max-w-6xl mx-auto min-h-screen flex flex-col mt-7 ">
             {children}
           </div>
           <Footer />

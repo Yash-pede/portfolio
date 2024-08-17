@@ -47,7 +47,7 @@ export const ProjectsCard = ({
           <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2">
             <Image
               src={item.src}
-              className="flex gap-2 md:gap-3 rounded-lg"
+              className="flex gap-2 md:gap-3 rounded-lg max-h-[20rem] object-contain p-3"
               alt="Image"
             />
           </CardHeader>
