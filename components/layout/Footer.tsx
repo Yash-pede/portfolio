@@ -7,16 +7,15 @@ import { isMobile } from "react-device-detect";
 
 const Footer = () => {
   return (
-    <div className="relative w-full gap-3 md:rounded-t-[7rem] flex flex-col gap-x-14 justify-center pt-10 bg-secondary md:h-[66] px-7 bg-gradient-to-t from-secondary/90  to-primary/25 items-center mt-24 text-divider/60 overflow-hidden md:max-w-5xl mx-auto">
+    <div className="relative w-full gap-3 md:rounded-t-[7rem] flex flex-col gap-x-14 justify-center pt-10 bg-secondary md:h-[66] px-7 bg-gradient-to-t from-secondary/90 to-primary/25 items-center mt-24 text-divider/60 overflow-hidden md:max-w-5xl mx-auto">
       <Noise className="md:rounded-t-[7rem] opacity-5" />
       <div className="pb-5 md:flex md:flex-row md:space-x-20">
-        <div className=" flex flex-col space-y-6 md:w-56 ">
+        <div className=" flex flex-col space-y-5 md:w-60 ">
           <Link color="foreground" href="/" className="font-semibold">
             Logo
           </Link>
           <p className="font-medium">
-            I&apos;m {SiteConfig.user.firstName} - a senior front-end developer,
-            thanks for checking out my site!
+            I&apos;m {SiteConfig.user.firstName} - a Full Stack Dev, coding by day, fearing AI will steal my job and my lunch by night! Thanks for visiting!
           </p>
 
           <div className="flex flex-row space-x-3 text-neutral-700">

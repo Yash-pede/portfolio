@@ -14,11 +14,11 @@ const ProjectsPage = () => {
       {projects.map((item, index) => (
         <Card as={Link}
           key={index} href={item.link}
-          className="gap-2 md:gap-3 w-full bg-transparent border-none shadow-none text-default-600"
+          className="gap-2 md:gap-3 md:w-[76%] w-full bg-transparent border-none shadow-none text-default-600"
         >
-          <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2 p-3">
-            <ImagesSlider images={item.src} className="h-[30rem] p-3" />
-          </CardHeader>
+          <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2  md:p-[0.5px]">
+            <ImagesSlider images={item.src} className="h-[30rem]" />
+          </CardHeader> 
           <CardBody className="gap-5">
             <p className="text-xl md:text-2xl text-foreground font-semibold">
               {item.title}
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
           items={minorProjects}
           containerClassName="flex flex-wrap justify-center gap-3 items-center flex-row"
           className="w-[40%]"
-          showFooter
+          // showFooter
         />
       </div>
     </section>

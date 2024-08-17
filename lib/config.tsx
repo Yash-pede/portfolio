@@ -21,20 +21,21 @@ import {
   valo,
   vscode,
   warp,
-  yashSite,
+  threePortfolio,
+  pythojarvisproject,
 } from "@/public/images";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const SiteConfig = {
   site: {
-    name: "Name",
-    description: "a portfolio",
+    name: "Yash Pede | Portfolio",
+    description: "Welcome to my cite of the internet",
   },
   user: {
-    firstName: "firstName",
-    lastName: "lastName",
-    email: "name@name.com",
-    username: "username",
+    firstName: "Yash",
+    lastName: "Pede",
+    email: "yashpede@ssipmt.com",
+    username: "yash-pede",
     socials: {
       githubUserId: "Yash-pede",
       linkedInUserId: "Yash-pede",
@@ -382,24 +383,24 @@ export const projects = [
     link: "https://building.yashpede.in/",
     title: "Portfolio Page",
     description:
-      "A page that describes my projects, connections, software and hardware I use",
+      "A modern portfolio website that showcases my projects, connections and much more about me",
   },
   {
-    src: ["/images/yashSite.png", "/images/dp.jpg"],
-    link: "https://www.protfolio.yashpede.in/", 
-    title: "Portfolio Page 2",
+    src: ["/images/pp.png", "/images/pp1.png","/images/pp2.png"],
+    link: "https://www.admin.purepridepharma.in/", 
+    title: "Pure Pride Pharma ",
     description:
-      "A page that describes my projects, connections and much more about me",
+      "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
   },
 ];
 
 export const minorProjects = [
   {
-    src: yashSite,
+    src: threePortfolio,
     link: "https://www.protfolio.yashpede.in/",
-    title: "Portfolio Page",
+    title: "3D Portfolio",
     description:
-      "Explore the my portfolio with this captivating 3D simulation of the my workstation using Three.js.",
+      "Explore the my portfolio with this captivating 3D simulation of the my workstation using Three.js, React-Three-Fiber.",
   },
   {
     src: initialPortfolio,
@@ -407,12 +408,19 @@ export const minorProjects = [
     title: "Minimal Portfolio",
     description:
       "A portfolio website for a web developer.",
-  },
+  },    
   {
     src: Saas,
     link: "https://www.shrewit.shop/",
     title: "AI NoteTaking SaaS - Web Application",
     description:
       "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+  },
+  {
+    src: pythojarvisproject,
+    link: "https://drive.google.com/file/d/1SJIxvg3gWLVW1rG1DGLJ15xr8dRGCXeh/view?usp=sharing",
+    title: "Ironman's Jarvis",
+    description:
+      "A python project that converts speech to text and and does talks by understanding it. It was recorded back in 2018 I was still a kid then ignore the quality",
   },
 ];

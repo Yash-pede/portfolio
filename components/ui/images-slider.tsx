@@ -142,7 +142,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-contain object-center"
+            className="image h-full w-full absolute inset-0 object-contain object-center rounded-2xl"
           />
         </AnimatePresence>
       )}
