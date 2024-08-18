@@ -207,7 +207,7 @@ export const hardware = [
   {
     title: "Laptop",
     description:
-      "HP Pavilion Gaming AMD Ryzen 5 Quad Core 3550H - (8 + 8 GB/1 TB HDD + 512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) ",
+      "HP Pavilion Gaming AMD Ryzen 5 Quad Core 3550H - (8 + 8 GB/1 TB HDD + 512 GB SSD/Arch linux /4 GB Graphics/NVIDIA GeForce GTX 1650) ",
     company: "HP",
   },
   {
