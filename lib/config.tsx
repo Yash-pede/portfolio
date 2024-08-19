@@ -385,13 +385,13 @@ export const tools = [
 ];
 
 export const projects = [
-  {
-    src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
-    link: "https://yashpede.in/",
-    title: "Portfolio Page",
-    description:
-      "A modern portfolio website that showcases my projects, connections and much more about me",
-  },
+  // {
+  //   src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
+  //   link: "https://yashpede.in/",
+  //   title: "Portfolio Page",
+  //   description:
+  //     "A modern portfolio website that showcases my projects, connections and much more about me",
+  // },
   {
     src: ["/images/pp.png", "/images/pp1.png", "/images/pp2.png"],
     link: "https://www.admin.purepridepharma.in/",
