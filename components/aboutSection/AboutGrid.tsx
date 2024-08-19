@@ -12,6 +12,7 @@ import {
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 const AboutGrid = () => {
   return (
@@ -48,7 +49,7 @@ const AboutGrid = () => {
             meaningful digital experiences.
           </CardBody>
         </Card>
-        <ImageWraper src={meSpeech} alt="meBro" />
+        <ImageWraper src={meSpeech} alt="meBro" className="hidden md:block" />
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
         <Card className="bg-transparent p-10 md:pt-[7rem] relative hidden md:block">
@@ -93,7 +94,7 @@ const AboutGrid = () => {
             of education in technology.
           </CardBody>
         </Card>
-        <ImageWraper src={meFly} alt="meBro" />
+        <ImageWraper src={isMobile ? meSpeech : meFly} alt="meBro" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
           <CardBody className="text-default-500 text-lg">
