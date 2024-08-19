@@ -23,6 +23,7 @@ import {
   warp,
   threePortfolio,
   pythojarvisproject,
+  ProjectsPage,
 } from "@/public/images";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
@@ -329,7 +330,7 @@ export const changelog = [
     title: "Projects Page",
     description: [`I redesigned the projects page!`],
     date: "August 15, 2024",
-    img: ftimg,
+    img: ProjectsPage,
     chips: ["Design", "Enhancement", "Feature"],
   },
   {

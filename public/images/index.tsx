@@ -38,6 +38,7 @@ import meSpeech from "./me-speech.jpg"
 import me1 from "./me1.jpg"
 import ArrowLeft from "./arrowLeft.svg"
 import arrowRightDown from "./arrowRightDown.svg"
+import ProjectsPage from "./projectsPage.png"
 
 export {
   FullBody,
@@ -79,5 +80,6 @@ export {
   meSpeech,
   me1,
   ArrowLeft,
-  arrowRightDown
+  arrowRightDown,
+  ProjectsPage
 };
