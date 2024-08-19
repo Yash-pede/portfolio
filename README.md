@@ -80,9 +80,14 @@ Thank you for visiting my portfolio!
 To view this portfolio locally, follow these steps:
 
 1. Make sure you have Bun installed globally:
+
    ```bash
    npm install -g bun
+   ```
+   ```bash
    bun install
+   ```
+   ```bash
    bun run dev
    ```
    
