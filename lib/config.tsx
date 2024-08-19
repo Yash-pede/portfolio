@@ -218,9 +218,9 @@ export const hardware = [
     company: "Samsung",
   },
   {
-    title: "Mouse/Keyboard",
-    description: "Mechanical Keyboard",
-    company: "Coconut",
+    title: "External Monitor",
+    description: "BenQ 27inch 1080p FHD IPS Monitor",
+    company: "Benq",
   },
   {
     title: "Microphone",
@@ -401,6 +401,14 @@ export const projects = [
       "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
   },
 ];
+export const setup = {
+  src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"],
+
+  link: "https://www.admin.purepridepharma.in/",
+  title: "Pure Pride Pharma ",
+  description:
+    "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
+};
 
 export const minorProjects = [
   {

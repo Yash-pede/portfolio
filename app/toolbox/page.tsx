@@ -3,11 +3,13 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import Image from "next/image";
 import { Link } from "@nextui-org/react";
 import { HoverEffect } from "@/components/ui/cardHoverEffect";
-import { hardware, toolboxData } from "@/lib/config";
+import { hardware, setup, toolboxData } from "@/lib/config";
+import { ImagesSlider } from "@/components/ui/images-slider";
+import SectionHeading from "@/components/layout/SectionHeading";
 
 const ToolboxPage = () => {
   return (
-    <section className="">
+    <section className="flex flex-col justify-center items-center">
       <h4 className="text-4xl font-light grid place-content-center ">
         Applications
       </h4>
@@ -48,6 +50,8 @@ const ToolboxPage = () => {
       <div className="md:max-w-5xl mx-auto mt-5">
         <HoverEffect items={hardware} />
       </div>
+      <SectionHeading title="Setup" subtitle="I am an archg user BTW..."/>
+      <ImagesSlider images={setup.src} className="h-[20rem] mt-10 rounded-2xl" />
     </section>
   );
 };
