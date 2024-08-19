@@ -8,7 +8,6 @@ Welcome to my portfolio! This website showcases my skills, projects, and experie
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Projects](#projects)
-- [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
 - [Installation](#installation)
