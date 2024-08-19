@@ -65,7 +65,7 @@ const AboutGrid = () => {
                 alt="ArrowLeft"
                 className="absolute left-0 "
               />
-              psst…try drawing on the pictures
+              psst…Take a Look
               <Image
                 src={arrowRightDown}
                 alt="ArrowLeft"
