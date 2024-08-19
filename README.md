@@ -8,10 +8,10 @@ Welcome to my portfolio! This website showcases my skills, projects, and experie
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Projects](#projects)
-- [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
+- [Installation](#installation)
 
 ## About Me
 
@@ -24,6 +24,8 @@ This portfolio is built using the following technologies:
 - HTML
 - CSS
 - JavaScript
+- Next.js
+- Bun
 - [Any other frameworks or libraries you used, e.g., React, Bootstrap, etc.]
 
 ## Features
@@ -52,10 +54,32 @@ Here are some of the key projects showcased in my portfolio:
    - Technologies: [List of technologies used]
    - [Link to the project or its repository]
 
+## Usage
+
+[Provide instructions on how to navigate your portfolio, any interactive features, or how to use the contact form.]
+
+## License
+
+This project is licensed under the [Your License Name] - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Feel free to reach out to me:
+
+- Email: [your-email@example.com]
+- LinkedIn: [Your LinkedIn Profile URL]
+- GitHub: [Your GitHub Profile URL]
+
+Thank you for visiting my portfolio!
+
 ## Installation
 
 To view this portfolio locally, follow these steps:
 
-1. Clone the repository:
+1. Make sure you have Bun installed globally:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   npm install -g bun
+   bun install
+   bun run dev
+   ```
+   
