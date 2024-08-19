@@ -62,7 +62,9 @@ Here are some of the key projects showcased in my portfolio:
 
 ## License
 
-This project is not licensed for public use. All rights reserved. Please do not copy, modify, or distribute this code without explicit permission.
+This project is licensed under the GNU General Public License v3.0. You can redistribute it and/or modify it under the terms of the License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This project is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 ## Contact
 
