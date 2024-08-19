@@ -9,7 +9,7 @@ import {
   meMom,
   meSpeech,
 } from "@/public/images";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader, Link } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { isMobile } from "react-device-detect";
@@ -98,7 +98,7 @@ const AboutGrid = () => {
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
           <CardBody className="text-default-500 text-lg">
-            Currently, I am working as a full-stack engineer at Momentum.sh,
+            Currently, I am working as a full-stack engineer at <Link href={"https://momentum.sh"} isExternal color="primary" isBlock>Momentum.sh</Link>,
             where I contribute to innovative projects and enhance my skills in a
             dynamic environment. Recently, I completed a freelance project
             developing a CRM software for a pharmaceutical company to help them
