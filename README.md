@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+Welcome to my portfolio! This website showcases my skills, projects, and experiences in Development. Feel free to explore and learn more about my work.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About Me](#about-me)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Projects](#projects)
+- [License](#license)
+- [Contact](#contact)
+- [Installation](#installation)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I'm an experienced full-stack developer with a passion For design and a knack for tinkering. Web development is my playground, where push
+boundaries and chase new horizons.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Home Page Screenshot](public/images/HomeScreen.png)
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+This portfolio is built using the following technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React
+- TailwindCSS
+- TypeScript
+- Next.js
+- Bun
+- Aceternity UI
+- Nextui
+- Framer Motion
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+- **Responsive Design**: The website is designed to be fully responsive and accessible on various devices.
+- **Project Showcase**: A dedicated section to highlight my projects with descriptions and links.
+- **Contact Form**: A simple contact form that allows visitors to reach out to me directly.
+- **Animations with Framer Motion**: Utilize Framer Motion for smooth animations and transitions throughout the site.
+- **Aceternity UI Components**: Incorporate beautiful Tailwind CSS and Framer Motion components from Aceternity UI to enhance the visual appeal and functionality of the website.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Projects
+
+Here are some of the key projects showcased in my portfolio:
+
+1. **Pure Pride Pharma**
+   - Description: A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.
+   - Technologies: Refine, Supabase, Postgres, Tanstack Query, Vercel
+   - [Admin pannel for purepridepharma](https://admin.purepridepharma.in)
+
+2. **AI NoteTaking SaaS - Web Application**
+   - Description: A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.
+   - Technologies: Nextjs, Vercel, Zod, ShadCn, ReactHookForm, Supabase, DrizzleOrm
+   - [Cypress](https://shrewit.shop)
+
+3. **Ironman's Jarvis**
+   - Description: A python project that converts speech to text and and does talks by understanding it. It was recorded back in 2018 I was still a kid then ignore the quality
+   - Technologies: python, Voice-to-text, Google api's, Ollama
+   - [JARVIS](https://drive.google.com/file/d/1SJIxvg3gWLVW1rG1DGLJ15xr8dRGCXeh/view?usp=sharing)
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. You can redistribute it and/or modify it under the terms of the License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This project is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+## Contact
+
+Feel free to reach out to me:
+
+- Email: yashpede@ssipmt.com
+- LinkedIn: yash-pede
+- GitHub: yash-pede
+
+Thank you for visiting my portfolio!
+
+## Installation
+
+To view this portfolio locally, follow these steps:
+
+1. Make sure you have Bun installed globally:
+
+   ```bash
+   npm install -g bun
+   ```
+   ```bash
+   bun install
+   ```
+   ```bash
+   bun run dev
+   ```
+   
