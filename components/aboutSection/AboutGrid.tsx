@@ -97,8 +97,8 @@ const AboutGrid = () => {
         <ImageWraper src={isMobile ? meSpeech : meFly} alt="meBro" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
-          <CardBody className="text-default-500 text-lg">
-            Currently, I am working as a full-stack engineer at <Link href={"https://momentum.sh"} isExternal color="primary" showAnchorIcon>Momentum.sh</Link>,
+          <CardBody className="text-default-500 text-lg block">
+            Currently, I am working as a full-stack engineer at <Link href={"https://momentum.sh"} isExternal color="primary" showAnchorIcon className="w-fit">Momentum.sh</Link>,
             where I contribute to innovative projects and enhance my skills in a
             dynamic environment. Recently, I completed a freelance project
             developing a CRM software for a pharmaceutical company to help them
