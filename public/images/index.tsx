@@ -29,6 +29,16 @@ import re from "./re.svg";
 import tail from "./tail.svg";
 import ts from "./ts.svg";
 import pythojarvisproject from "./pythojarvisproject.png";
+import meBro from "./me-bro.jpg"
+import meFly from "./me-fly.jpg"
+import meGym from "./me-gym.jpg"
+import meMom from "./me-mom.jpg"
+import meRed from "./me-red.jpg"
+import meSpeech from "./me-speech.jpg"
+import me1 from "./me1.jpg"
+import ArrowLeft from "./arrowLeft.svg"
+import arrowRightDown from "./arrowRightDown.svg"
+
 export {
   FullBody,
   AboutSectionFeat,
@@ -61,4 +71,13 @@ export {
   ts,
   re,
   pythojarvisproject,
+  meBro,
+  meFly,
+  meGym,
+  meMom,
+  meRed,
+  meSpeech,
+  me1,
+  ArrowLeft,
+  arrowRightDown
 };

@@ -5,7 +5,7 @@ const SectionHeading = ({
   subtitle,
 }: {
   title?: string;
-  subtitle: string;
+  subtitle?: string;
 }) => {
   return (
     <div className="md:max-w-md text-start md:text-center w-full flex justify-center items-start md:items-center flex-col gap-5">

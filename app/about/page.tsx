@@ -9,10 +9,12 @@ import {
   Resume,
 } from "@/components/aboutSection";
 import { Metadata } from "next";
+import AboutGrid from "@/components/aboutSection/AboutGrid";
 
 const AboutPage = () => {
   return (
-    <section>
+    <section className="w-full h-full flex flex-col justify-center items-center gap-32 mt-20">
+      <AboutGrid/>
       <About items={items} />
     </section>
   );

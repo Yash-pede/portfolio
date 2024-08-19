@@ -16,6 +16,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yashpede.in"),
   title: {
     default: SiteConfig.site.name,
     template: `%s | ${SiteConfig.site.name}`,
@@ -27,7 +28,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: SiteConfig.site.name,
     description: SiteConfig.site.description,
-    type:"website"
+    type:"website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: SiteConfig.site.name,
+      },
+    ]
   },
 };
 
