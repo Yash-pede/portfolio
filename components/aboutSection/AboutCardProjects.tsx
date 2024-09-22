@@ -1,8 +1,6 @@
 import { Avatar } from "@nextui-org/react";
 import React from "react";
-import { Meteors } from "../ui/meteors";
 import Link from "next/link";
-import { isMobile } from "react-device-detect";
 
 export const AboutCardProjects = () => {
   return (
@@ -17,7 +15,6 @@ export const AboutCardProjects = () => {
           A collection of my favorite works
         </p>
       </div>
-      <Meteors number={isMobile ? 3 : 7} />
     </Link>
   );
 };
