@@ -33,7 +33,8 @@ const Footer = () => {
             ))}
           </div>
 
-          <div>© 2024 {SiteConfig.site.name}</div>
+          <Link href="https://date.yashpede.in" target="_blank" 
+           color="foreground">© 2024 {SiteConfig.site.name}</Link>
         </div>
 
         <div className="flex flex-wrap gap-x-20 font-semibold md:flex-row md:gap-20 md:justify-center">

@@ -52,7 +52,7 @@ const AboutGrid = () => {
         <ImageWraper src={meSpeech} alt="meBro" className="hidden md:block" />
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
-        <Card className="bg-transparent p-10 md:pt-[7rem] relative hidden md:block">
+        <Card as={Link} isExternal href="https://date.yashpede.in/" className="bg-transparent cursor-default p-10 md:pt-[7rem] relative hidden md:block">
           <CardBody>
             <p className="text-xl ">
               Hey there! Let me quickly tell you about myself and what I enjoy
