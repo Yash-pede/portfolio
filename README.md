@@ -65,8 +65,8 @@ Here are some of the key projects showcased in my portfolio:
 Feel free to reach out to me:
 
 - Email: yashpede@ssipmt.com
-- LinkedIn: yash-pede
-- GitHub: yash-pede
+- LinkedIn: [yash-pede](https://www.linkedin.com/in/yash-pede)
+- GitHub: [yash-pede](https://github.com/Yash-pede)
 
 Thank you for visiting my portfolio!
 
