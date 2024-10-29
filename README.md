@@ -60,12 +60,6 @@ Here are some of the key projects showcased in my portfolio:
    - Technologies: python, Voice-to-text, Google api's, Ollama
    - [JARVIS](https://drive.google.com/file/d/1SJIxvg3gWLVW1rG1DGLJ15xr8dRGCXeh/view?usp=sharing)
 
-## License
-
-This project is licensed under the GNU General Public License v3.0. You can redistribute it and/or modify it under the terms of the License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This project is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
 ## Contact
 
 Feel free to reach out to me:
@@ -92,3 +86,10 @@ To view this portfolio locally, follow these steps:
    bun run dev
    ```
    
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. You can redistribute it and/or modify it under the terms of the License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This project is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
