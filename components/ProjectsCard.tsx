@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Nextjs } from "@/public/images";
 import {
   Avatar,
   AvatarGroup,
@@ -43,6 +42,8 @@ export const ProjectsCard = ({
             "gap-2 md:gap-3 bg-transparent border-none shadow-none text-default-600",
             className
           )}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <CardHeader className="flex flex-col justify-start items-start md:flex-row w-full h-full md:justify-between gap-2">
             <Image

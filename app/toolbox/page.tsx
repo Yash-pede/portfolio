@@ -50,7 +50,7 @@ const ToolboxPage = () => {
       <div className="md:max-w-5xl mx-auto mt-5">
         <HoverEffect items={hardware} />
       </div>
-      <SectionHeading title="Setup" subtitle="I am an archg user BTW..."/>
+      <SectionHeading title="Setup" subtitle="I am an arch user BTW..."/>
       <ImagesSlider images={setup.src} className="h-[20rem] mt-10 rounded-2xl" />
     </section>
   );

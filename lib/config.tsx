@@ -199,7 +199,7 @@ export const socialLinks = [
   {
     title: "Twitter",
     icon: <Twitter />,
-    url: "https://x.com/vo_id8",
+    url: "https://x.com/yashpede_",
   },
 ];
 
@@ -415,7 +415,7 @@ export const minorProjects = [
     link: "https://www.protfolio.yashpede.in/",
     title: "3D Portfolio",
     description:
-      "Explore the my portfolio with this captivating 3D simulation of the my workstation using Three.js, React-Three-Fiber.",
+      "Explore my portfolio with this captivating 3D simulation of my workstation using Three.js, React-Three-Fiber.",
   },
   {
     src: initialPortfolio,
