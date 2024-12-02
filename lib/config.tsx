@@ -394,19 +394,14 @@ export const projects = [
   // },
   {
     src: ["/images/pp.png", "/images/pp1.png", "/images/pp2.png"],
-    link: "https://www.admin.purepridepharma.in/",
-    title: "Pure Pride Pharma ",
+    link: "https://www.shrewit.com/",
+    title: "Shrewit - Supply chain management",
     description:
-      "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
+      "A CRM system for an online manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
   },
 ];
 export const setup = {
-  src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"],
-
-  link: "https://www.admin.purepridepharma.in/",
-  title: "Pure Pride Pharma ",
-  description:
-    "A CRM system for an online Medical manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
+  src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"]
 };
 
 export const minorProjects = [
