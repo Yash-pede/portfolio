@@ -39,6 +39,7 @@ import me1 from "./me1.jpg"
 import ArrowLeft from "./arrowLeft.svg"
 import arrowRightDown from "./arrowRightDown.svg"
 import ProjectsPage from "./projectsPage.png"
+import meKurta from "./meKurta.jpg"
 
 export {
   FullBody,
@@ -81,5 +82,6 @@ export {
   me1,
   ArrowLeft,
   arrowRightDown,
-  ProjectsPage
+  ProjectsPage,
+  meKurta
 };

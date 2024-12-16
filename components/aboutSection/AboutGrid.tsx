@@ -8,8 +8,15 @@ import {
   meGym,
   meMom,
   meSpeech,
+  meKurta
 } from "@/public/images";
-import { Card, CardBody, CardFooter, CardHeader, Link } from "@nextui-org/react";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Link,
+} from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { isMobile } from "react-device-detect";
@@ -50,9 +57,35 @@ const AboutGrid = () => {
           </CardBody>
         </Card>
         <ImageWraper src={meSpeech} alt="meBro" className="hidden md:block" />
+        <Card className="relative bg-transparent">
+          <CardHeader className="text-2xl">
+            Shrewit: Revolutionizing Supply Chain Management
+          </CardHeader>
+          <CardBody className="text-default-500 text-lg">
+            Shrewit is an innovative AI-powered supply chain management platform
+            designed to optimize inventory, logistics, and demand forecasting
+            for manufacturers across industries like FMCG, pharmaceuticals,
+            electronics, and textiles. By combining real-time analytics,
+            inventory tracking, and AI-driven demand insights into one seamless
+            system, Shrewit eliminates inefficiencies such as overstocking,
+            stockouts, and production delays.
+            <br />
+            <br /> With its scalable architecture and easy-to-use interface,
+            Shrewit empowers businesses to streamline operations, reduce costs,
+            and improve profitability. Already live and in use at multiple
+            locations, this solution is built to adapt to dynamic industry
+            needs, offering a modern approach to traditional supply chain
+            challenges.
+          </CardBody>
+        </Card>
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
-        <Card as={Link} isExternal href="https://date.yashpede.in/" className="bg-transparent cursor-default p-10 md:pt-[7rem] relative hidden md:block">
+        <Card
+          as={Link}
+          isExternal
+          href="https://date.yashpede.in/"
+          className="bg-transparent cursor-default p-10 md:pt-[7rem] relative hidden md:block"
+        >
           <CardBody>
             <p className="text-xl ">
               Hey there! Let me quickly tell you about myself and what I enjoy
@@ -98,9 +131,18 @@ const AboutGrid = () => {
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
           <CardBody className="text-default-500 text-lg block">
-            Currently, I am working as a full-stack engineer at <Link href={"https://momentum.sh"} isExternal color="primary" showAnchorIcon className="w-fit">Momentum.sh</Link>,
-            where I contribute to innovative projects and enhance my skills in a
-            dynamic environment. Recently, I completed a freelance project
+            Currently, I am working as a full-stack engineer at{" "}
+            <Link
+              href={"https://potpie.ai"}
+              isExternal
+              color="primary"
+              showAnchorIcon
+              className="w-fit"
+            >
+              potpie.ai
+            </Link>
+            , where I contribute to innovative projects and enhance my skills in
+            a dynamic environment. Recently, I completed a freelance project
             developing a CRM software for a pharmaceutical company to help them
             manage inventory and streamline their operations. This experience
             not only allowed me to apply my technical expertise but also
@@ -108,6 +150,7 @@ const AboutGrid = () => {
             real-world needs.
           </CardBody>
         </Card>
+        <ImageWraper src={meKurta} alt="meBro" />
       </div>
     </div>
   );
