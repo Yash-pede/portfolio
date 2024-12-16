@@ -62,7 +62,15 @@ const AboutGrid = () => {
             Shrewit: Revolutionizing Supply Chain Management
           </CardHeader>
           <CardBody className="text-default-500 text-lg">
-            Shrewit is an innovative AI-powered supply chain management platform
+          <Link
+              href={"https://shrewit.com"}
+              isExternal
+              color="primary"
+              showAnchorIcon
+              className="w-fit"
+            >
+              Shrewit
+            </Link> is an innovative AI-powered supply chain management platform
             designed to optimize inventory, logistics, and demand forecasting
             for manufacturers across industries like FMCG, pharmaceuticals,
             electronics, and textiles. By combining real-time analytics,
