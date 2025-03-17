@@ -3,15 +3,11 @@ import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
   arrowRightDown,
-  me1,
   meBro,
-  meGym,
-  meMom,
   meSpeech,
   meKurta,
-  yashValley,
   riverRafting,
-  me4,
+  mevalleysit,
   gf,
 } from "@/public/images";
 import {
@@ -168,7 +164,7 @@ const AboutGrid = () => {
             of education in technology.
           </CardBody>
         </Card>
-        <ImageWraper src={isMobile ? meSpeech : me4} alt="meBro" />
+        <ImageWraper src={isMobile ? meSpeech : mevalleysit} alt="meBro" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">Autonomous AI agents for you codebase.</CardHeader>
           <CardBody className="text-default-500 text-lg block">

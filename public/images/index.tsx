@@ -36,18 +36,17 @@ import meMom from "./me-mom.jpg";
 import meRed from "./me-red.jpg";
 import meSpeech from "./me-speech.jpg";
 import me1 from "./me1.jpg";
-import me4 from "./me4.jpg";
+import mevalleysit from "./Screenshot_20250318_013342_Gallery.jpg";
 import riverRafting from "./riverrafting.jpg";
 import ArrowLeft from "./arrowLeft.svg";
 import arrowRightDown from "./arrowRightDown.svg";
 import ProjectsPage from "./projectsPage.png";
 import meKurta from "./meKurta.jpg";
-import yashValley from "./yashValley.jpg";
-import gf from "./gf.jpg";
+import gf from "./gfkamar.jpg";
 
 export {
-  yashValley,
   riverRafting,
+  mevalleysit,
   FullBody,
   AboutSectionFeat,
   ToolboxPage,
@@ -85,7 +84,6 @@ export {
   meMom,
   meRed,
   meSpeech,
-  me4,
   me1,
   gf,
   ArrowLeft,
