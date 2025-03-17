@@ -1,14 +1,18 @@
+"use client";
 import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
   arrowRightDown,
   me1,
   meBro,
-  meFly,
   meGym,
   meMom,
   meSpeech,
-  meKurta
+  meKurta,
+  yashValley,
+  riverRafting,
+  me4,
+  gf,
 } from "@/public/images";
 import {
   Card,
@@ -18,10 +22,28 @@ import {
   Link,
 } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
 
 const AboutGrid = () => {
+  const videoEl = useRef<any>(null);
+
+  const attemptPlay = () => {
+    try {
+      if (videoEl && videoEl.current && videoEl.current) {
+        videoEl.current.play();
+      } else {
+        throw new Error("No ref found");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
+
   return (
     <div className="grid w-full md:w-4/5 h-full grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 auto-rows-min justify-center overflow-hidden p-0 mb-7 md:mb-10">
       <div className="flex flex-col gap-24 justify-start items-center">
@@ -38,7 +60,7 @@ const AboutGrid = () => {
             endeavors.
           </CardBody>
         </Card>
-        <ImageWraper src={me1} alt="meBro" />
+        <ImageWraper src={riverRafting} alt="meBro" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">
             Transition to Web Development
@@ -62,7 +84,7 @@ const AboutGrid = () => {
             Shrewit: Revolutionizing Supply Chain Management
           </CardHeader>
           <CardBody className="text-default-500 text-lg">
-          <Link
+            <Link
               href={"https://shrewit.com"}
               isExternal
               color="primary"
@@ -70,7 +92,8 @@ const AboutGrid = () => {
               className="w-fit"
             >
               Shrewit
-            </Link> is an innovative AI-powered supply chain management platform
+            </Link>{" "}
+            is an innovative AI-powered supply chain management platform
             designed to optimize inventory, logistics, and demand forecasting
             for manufacturers across industries like FMCG, pharmaceuticals,
             electronics, and textiles. By combining real-time analytics,
@@ -86,6 +109,7 @@ const AboutGrid = () => {
             challenges.
           </CardBody>
         </Card>
+        <ImageWraper src={gf} alt="meBro" />
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
         <Card
@@ -116,7 +140,16 @@ const AboutGrid = () => {
             </p>
           </CardFooter>
         </Card>
-        <ImageWraper src={meGym} alt="meBro" />
+        {/* <ImageWraper src={meGym} alt="meBro" /> */}
+        <video
+          autoPlay
+          muted
+          loop
+          controls={false}
+          className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover"
+        >
+          <source src="/bunjee.mp4" />
+        </video>
         <Card className="relative bg-transparent md:pt-[15rem]">
           <CardHeader className="text-2xl">
             Community Teaching Experience
@@ -135,11 +168,11 @@ const AboutGrid = () => {
             of education in technology.
           </CardBody>
         </Card>
-        <ImageWraper src={isMobile ? meSpeech : meFly} alt="meBro" />
+        <ImageWraper src={isMobile ? meSpeech : me4} alt="meBro" />
         <Card className="relative bg-transparent">
-          <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
+          <CardHeader className="text-2xl">Autonomous AI agents for you codebase.</CardHeader>
           <CardBody className="text-default-500 text-lg block">
-            Currently, I am working as a full-stack engineer at{" "}
+            Also, worked as a full-stack engineer at{" "}
             <Link
               href={"https://potpie.ai"}
               isExternal
@@ -159,6 +192,21 @@ const AboutGrid = () => {
           </CardBody>
         </Card>
         <ImageWraper src={meKurta} alt="meBro" />
+        <Card className="relative bg-transparent">
+          <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
+          <CardBody className="text-default-500 text-lg block">
+            I am currently working with AstroShrine, an innovative astrology
+            platform that is in the final stages of preparation for its launch.
+            Our goal is to connect individuals with expert astrologers for
+            personalized insights into various aspects of their lives, such as
+            career, health, relationships, and more. We are working to provide a
+            comprehensive online experience, offering services like Kundli
+            matching, daily horoscopes, tarot readings, and much more. The
+            platform is designed to make astrology accessible and easy to
+            navigate, helping people make informed decisions based on cosmic
+            guidance.
+          </CardBody>
+        </Card>
       </div>
     </div>
   );

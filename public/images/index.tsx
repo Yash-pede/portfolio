@@ -29,19 +29,25 @@ import re from "./re.svg";
 import tail from "./tail.svg";
 import ts from "./ts.svg";
 import pythojarvisproject from "./pythojarvisproject.png";
-import meBro from "./me-bro.jpg"
-import meFly from "./me-fly.jpg"
-import meGym from "./me-gym.jpg"
-import meMom from "./me-mom.jpg"
-import meRed from "./me-red.jpg"
-import meSpeech from "./me-speech.jpg"
-import me1 from "./me1.jpg"
-import ArrowLeft from "./arrowLeft.svg"
-import arrowRightDown from "./arrowRightDown.svg"
-import ProjectsPage from "./projectsPage.png"
-import meKurta from "./meKurta.jpg"
+import meBro from "./me-bro.jpg";
+import meFly from "./me-fly.jpg";
+import meGym from "./me-gym.jpg";
+import meMom from "./me-mom.jpg";
+import meRed from "./me-red.jpg";
+import meSpeech from "./me-speech.jpg";
+import me1 from "./me1.jpg";
+import me4 from "./me4.jpg";
+import riverRafting from "./riverrafting.jpg";
+import ArrowLeft from "./arrowLeft.svg";
+import arrowRightDown from "./arrowRightDown.svg";
+import ProjectsPage from "./projectsPage.png";
+import meKurta from "./meKurta.jpg";
+import yashValley from "./yashValley.jpg";
+import gf from "./gf.jpg";
 
 export {
+  yashValley,
+  riverRafting,
   FullBody,
   AboutSectionFeat,
   ToolboxPage,
@@ -79,9 +85,11 @@ export {
   meMom,
   meRed,
   meSpeech,
+  me4,
   me1,
+  gf,
   ArrowLeft,
   arrowRightDown,
   ProjectsPage,
-  meKurta
+  meKurta,
 };
