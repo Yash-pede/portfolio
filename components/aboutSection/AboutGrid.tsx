@@ -9,6 +9,7 @@ import {
   riverRafting,
   mevalleysit,
   gf,
+  meGym,
 } from "@/public/images";
 import {
   Card,
@@ -187,7 +188,7 @@ const AboutGrid = () => {
             real-world needs.
           </CardBody>
         </Card>
-        <ImageWraper src={meKurta} alt="meBro" />
+        <ImageWraper src={meGym} alt="meBro" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
           <CardBody className="text-default-500 text-lg block">
