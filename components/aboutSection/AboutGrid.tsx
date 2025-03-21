@@ -146,7 +146,7 @@ const AboutGrid = () => {
         >
           <source src="/bunjee.mp4" />
         </video>
-        <Card className="relative bg-transparent md:pt-[15rem]">
+        <Card className="relative bg-transparent md:pt-[15rem]"> 
           <CardHeader className="text-2xl">
             Community Teaching Experience
           </CardHeader>
