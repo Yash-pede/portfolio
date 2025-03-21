@@ -144,7 +144,7 @@ const AboutGrid = () => {
           controls={false}
           className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover"
         >
-          <source src="/bunjee.mp4" />
+          <source src="/yashjump.mp4" />
         </video>
         <Card className="relative bg-transparent md:pt-[15rem]"> 
           <CardHeader className="text-2xl">
