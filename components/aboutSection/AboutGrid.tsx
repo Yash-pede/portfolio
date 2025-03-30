@@ -106,7 +106,7 @@ const AboutGrid = () => {
             challenges.
           </CardBody>
         </Card>
-        <ImageWraper src={gf} alt="meBro" />
+        <ImageWraper src={meKurta} alt="meBro" />
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
         <Card
