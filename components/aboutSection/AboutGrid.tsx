@@ -139,13 +139,13 @@ const AboutGrid = () => {
         </Card>
         <iframe
           width="315"
-          height="560"
+          height="600"
           src="https://www.youtube.com/embed/8gOmEL_bVvQ?autoplay=1&mute=1&playlist=8gOmEL_bVvQ&loop=1&controls=0"
-          title="YouTube video player"
+          title="bunji jump"
           frameBorder="50"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover -p-2"
+          className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover"
         ></iframe>
 
         <Card className="relative bg-transparent md:pt-[15rem]">

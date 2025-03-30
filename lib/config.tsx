@@ -41,7 +41,7 @@ export const SiteConfig = {
       githubUserId: "Yash-pede",
       linkedInUserId: "Yash-pede",
     },
-    schedulerLink: "https://calendar.app.google/Wbqq35kvsBVQnND26",
+    schedulerLink: "https://calendar.app.google/8pBD6b8XYFWE9JcFA",
   },
   title: "Yash Pede",
   resumeLink:
@@ -384,22 +384,6 @@ export const tools = [
   { src: warp, angle: 270 },
 ];
 
-export const projects = [
-  // {
-  //   src: ["/images/HomeScreen.png", "/images/aboutsection.png"],
-  //   link: "https://yashpede.in/",
-  //   title: "Portfolio Page",
-  //   description:
-  //     "A modern portfolio website that showcases my projects, connections and much more about me",
-  // },
-  {
-    src: ["/images/pp.png", "/images/pp1.png", "/images/pp2.png"],
-    link: "https://www.shrewit.com/",
-    title: "Shrewit - Supply chain management",
-    description:
-      "A CRM system for an online manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
-  },
-];
 export const setup = {
   src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"]
 };
