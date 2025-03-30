@@ -44,7 +44,7 @@ export default function MainNavbar() {
           </NavbarItem>
         ))}
         <NavbarItem>
-          <ThemeSwitcher />
+          {/* <ThemeSwitcher /> */}
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
