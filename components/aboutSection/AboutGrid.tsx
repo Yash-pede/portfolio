@@ -137,17 +137,18 @@ const AboutGrid = () => {
             </p>
           </CardFooter>
         </Card>
-        {/* <ImageWraper src={meGym} alt="meBro" /> */}
-        <video
-          autoPlay
-          muted
-          loop
-          controls={false}
-          className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover"
-        >
-          <source src="/yashjump.mp4" />
-        </video>
-        <Card className="relative bg-transparent md:pt-[15rem]"> 
+        <iframe
+          width="315"
+          height="560"
+          src="https://www.youtube.com/embed/8gOmEL_bVvQ?autoplay=1&mute=1&playlist=8gOmEL_bVvQ&loop=1&controls=0"
+          title="YouTube video player"
+          frameBorder="50"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="rounded-3xl border-5 border-secondary h-[37rem] md:h-[45rem] w-full object-cover -p-2"
+        ></iframe>
+
+        <Card className="relative bg-transparent md:pt-[15rem]">
           <CardHeader className="text-2xl">
             Community Teaching Experience
           </CardHeader>
@@ -167,7 +168,9 @@ const AboutGrid = () => {
         </Card>
         <ImageWraper src={isMobile ? meSpeech : mevalleysit} alt="meBro" />
         <Card className="relative bg-transparent">
-          <CardHeader className="text-2xl">Autonomous AI agents for you codebase.</CardHeader>
+          <CardHeader className="text-2xl">
+            Autonomous AI agents for you codebase.
+          </CardHeader>
           <CardBody className="text-default-500 text-lg block">
             Also, worked as a full-stack engineer at{" "}
             <Link
