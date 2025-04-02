@@ -45,7 +45,7 @@ export const SiteConfig = {
   },
   title: "Yash Pede",
   resumeLink:
-    "https://drive.google.com/file/d/1ACxP05bmiup2UncMAc143uSeU8MsoO0j/view?usp=drive_link",
+    "https://resume.yashpede.in",
 };
 
 export const NavbarItems = [
