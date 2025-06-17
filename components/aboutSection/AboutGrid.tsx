@@ -3,13 +3,12 @@ import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
   arrowRightDown,
-  meBro,
+  meKedarnath,
   meSpeech,
   meKurta,
   riverRafting,
   mevalleysit,
-  gf,
-  meGym,
+  mePointing,
 } from "@/public/images";
 import {
   Card,
@@ -44,7 +43,7 @@ const AboutGrid = () => {
   return (
     <div className="grid w-full md:w-4/5 h-full grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 auto-rows-min justify-center overflow-hidden p-0 mb-7 md:mb-10">
       <div className="flex flex-col gap-24 justify-start items-center">
-        <ImageWraper src={meBro} alt="meBro" />
+        <ImageWraper src={meKedarnath} alt="meKedarnath" />
         <Card className="relative bg-transparent ">
           <CardHeader className="text-2xl">Early Coding Adventures</CardHeader>
           <CardBody className="text-default-500 text-lg">
@@ -57,7 +56,7 @@ const AboutGrid = () => {
             endeavors.
           </CardBody>
         </Card>
-        <ImageWraper src={riverRafting} alt="meBro" />
+        <ImageWraper src={riverRafting} alt="meKedarnath" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">
             Transition to Web Development
@@ -75,7 +74,7 @@ const AboutGrid = () => {
             meaningful digital experiences.
           </CardBody>
         </Card>
-        <ImageWraper src={meSpeech} alt="meBro" className="hidden md:block" />
+        <ImageWraper src={meSpeech} alt="meKedarnath" className="hidden md:block" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">
             Shrewit: Revolutionizing Supply Chain Management
@@ -106,7 +105,7 @@ const AboutGrid = () => {
             challenges.
           </CardBody>
         </Card>
-        <ImageWraper src={meKurta} alt="meBro" />
+        <ImageWraper src={meKurta} alt="meKedarnath" />
       </div>
       <div className="flex flex-col gap-24 justify-start items-center">
         <Card
@@ -166,7 +165,7 @@ const AboutGrid = () => {
             of education in technology.
           </CardBody>
         </Card>
-        <ImageWraper src={isMobile ? meSpeech : mevalleysit} alt="meBro" />
+        <ImageWraper src={isMobile ? meSpeech : mevalleysit} alt="meKedarnath" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">
             Autonomous AI agents for you codebase.
@@ -191,7 +190,7 @@ const AboutGrid = () => {
             real-world needs.
           </CardBody>
         </Card>
-        <ImageWraper src={meGym} alt="meBro" />
+        <ImageWraper src={mePointing} alt="meKedarnath" />
         <Card className="relative bg-transparent">
           <CardHeader className="text-2xl">What I’m doing now.</CardHeader>
           <CardBody className="text-default-500 text-lg block">

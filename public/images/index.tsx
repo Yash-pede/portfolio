@@ -29,14 +29,11 @@ import re from "./re.svg";
 import tail from "./tail.svg";
 import ts from "./ts.svg";
 import pythojarvisproject from "./pythojarvisproject.png";
-import meBro from "./me-bro.jpg";
-import meFly from "./me-fly.jpg";
-import meGym from "./me-gym.jpg";
-import meMom from "./me-mom.jpg";
-import meRed from "./me-red.jpg";
+import meKedarnath from "./meKedarnath.jpg";
+import mePointing from "./mepointing.jpg";
 import meSpeech from "./me-speech.jpg";
 import me1 from "./me1.jpg";
-import mevalleysit from "./Screenshot_20250318_013342_Gallery.jpg";
+import mevalleysit from "./roadStand.jpg";
 import riverRafting from "./riverrafting.jpg";
 import ArrowLeft from "./arrowLeft.svg";
 import arrowRightDown from "./arrowRightDown.svg";
@@ -78,11 +75,8 @@ export {
   ts,
   re,
   pythojarvisproject,
-  meBro,
-  meFly,
-  meGym,
-  meMom,
-  meRed,
+  meKedarnath,
+  mePointing,
   meSpeech,
   me1,
   gf,
