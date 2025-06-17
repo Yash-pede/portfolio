@@ -411,7 +411,7 @@ export const minorProjects = [
   },
   {
     src: pythojarvisproject,
-    link: "https://drive.google.com/file/d/1SJIxvg3gWLVW1rG1DGLJ15xr8dRGCXeh/view?usp=sharing",
+    link: "https://youtu.be/H0My8OFX1oQ",
     title: "Ironman's Jarvis",
     description:
       "A python project that converts speech to text and and does talks by understanding it. It was recorded back in 2018 I was still a kid then ignore the quality",
