@@ -40,11 +40,13 @@ import arrowRightDown from "./arrowRightDown.svg";
 import ProjectsPage from "./projectsPage.png";
 import meKurta from "./meKurta.jpg";
 import gf from "./gfkamar.jpg";
+import mountainStand from "./mountainStand.jpg";
 
 export {
   riverRafting,
   mevalleysit,
   FullBody,
+  mountainStand,
   AboutSectionFeat,
   ToolboxPage,
   HomeScreen,

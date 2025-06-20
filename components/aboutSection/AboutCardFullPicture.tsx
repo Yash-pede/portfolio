@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FullBody } from "@/public/images";
+import { mountainStand } from "@/public/images";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export const AboutCardFullPicture = () => {
         }}
       />
       <Image
-        src={FullBody}
+        src={mountainStand}
         alt="Full Body"
         className="w-full h-full object-cover bottom-0"
       />
