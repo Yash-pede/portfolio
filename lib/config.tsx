@@ -417,3 +417,18 @@ export const minorProjects = [
       "A python project that converts speech to text and and does talks by understanding it. It was recorded back in 2018 I was still a kid then ignore the quality",
   },
 ];
+
+export const majorProjects = [
+  {
+    ytVideoId: "KrOePSQGdfE",
+    title: "Shrewit - Supply chain management",
+    description:
+      " A CRM system for an online manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
+  },
+    {
+    ytVideoId: "8EqbOZa5QOE",
+    title: "Vercel Lite - A Light weight vercel alternative",
+    description:
+      " A lightweight open-source Vercel clone built with Node.js, Next.js, Docker, AWS S3, and NGINX. vercel-lite replicates the core functionality of Vercel: allowing users to deploy frontend projects (like static sites) by providing a GitHub repo URL, which gets built and served with custom subdomains via a reverse proxy.",
+  }
+]
