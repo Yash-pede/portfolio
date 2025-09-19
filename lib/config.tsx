@@ -44,8 +44,7 @@ export const SiteConfig = {
     schedulerLink: "https://calendar.app.google/8pBD6b8XYFWE9JcFA",
   },
   title: "Yash Pede",
-  resumeLink:
-    "https://resume.yashpede.in",
+  resumeLink: "https://resume.yashpede.in",
 };
 
 export const NavbarItems = [
@@ -385,7 +384,7 @@ export const tools = [
 ];
 
 export const setup = {
-  src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"]
+  src: ["/images/setup1.jpg", "/images/setup2.jpg", "/images/setup3.jpg"],
 };
 
 export const minorProjects = [
@@ -420,15 +419,21 @@ export const minorProjects = [
 
 export const majorProjects = [
   {
+    ytVideoId: "VIsTnE7qxWU",
+    title: "AiPlanet: Document Ingestion & RAG Platform",
+    description:
+      "An AI-powered RAG platform that lets users upload documents and chat with them using contextual workflows. Built with Next.js, FastAPI, Supabase, and Chroma DB for intelligent document interactions.",
+  },
+  {
     ytVideoId: "KrOePSQGdfE",
     title: "Shrewit - Supply chain management",
     description:
       " A CRM system for an online manufacturers and distributors. It provides all the users a set of tools to manage their business. It is a modern and efficient solution for managing all your business needs.",
   },
-    {
+  {
     ytVideoId: "8EqbOZa5QOE",
     title: "Vercel Lite - A Light weight vercel alternative",
     description:
       " A lightweight open-source Vercel clone built with Node.js, Next.js, Docker, AWS S3, and NGINX. vercel-lite replicates the core functionality of Vercel: allowing users to deploy frontend projects (like static sites) by providing a GitHub repo URL, which gets built and served with custom subdomains via a reverse proxy.",
-  }
-]
+  },
+];
