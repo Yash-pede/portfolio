@@ -397,7 +397,7 @@ export const minorProjects = [
   },
   {
     src: initialPortfolio,
-    link: "https://www.initialportfolio.yashpede.in/",
+    link: "https://newportfolio.yashpede.in/",
     title: "Minimal Portfolio",
     description: "A portfolio website for a web developer.",
   },
